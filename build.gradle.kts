@@ -4,6 +4,7 @@ val ktor_version: String by project
 val kotlin_version: String by project
 val logback_version: String by project
 val coroutines_version: String by project
+val jackson_version: String by project
 
 group = "land.tbp"
 version = "0.0.1"
@@ -43,6 +44,9 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
     testImplementation("io.ktor:ktor-client-mock:$ktor_version")
     testImplementation("io.ktor:ktor-client-mock-jvm:$ktor_version")
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jackson_version")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jackson_version")
+
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>() {
