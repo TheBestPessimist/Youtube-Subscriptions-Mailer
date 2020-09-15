@@ -1,5 +1,6 @@
 @file:Suppress("PropertyName")
 
+
 val ktor_version: String by project
 val kotlin_version: String by project
 val logback_version: String by project
@@ -51,6 +52,7 @@ dependencies {
 
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jackson_version")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jackson_version")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jackson_version")
 
 }
 
