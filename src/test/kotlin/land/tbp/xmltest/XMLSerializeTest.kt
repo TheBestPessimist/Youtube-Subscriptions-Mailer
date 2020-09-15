@@ -2,15 +2,20 @@ package land.tbp.xmltest
 
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
 import com.fasterxml.jackson.module.kotlin.KotlinModule
-import org.junit.Test
+import org.junit.jupiter.api.Test
+import java.time.Month
+import java.time.ZoneId
+import java.time.ZonedDateTime
 import kotlin.test.assertEquals
 
 
 class XMLSerializeTest {
-
     @Test
-    fun deserialize() {
+    fun `deserialize xml`() {
 
         val s = """<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -49,13 +54,65 @@ class XMLSerializeTest {
         val xmlMapper = XmlMapper()
         xmlMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         xmlMapper.registerModule(KotlinModule())
+        xmlMapper.registerModule(JavaTimeModule())
 
-        val feed: PubFeed = xmlMapper.readValue(s, PubFeed::class.java)
-        assertEquals("Publisher example", feed.title)
-        println(feed)
+
+        val expected = PubFeed(
+                title = "Publisher example",
+                entry = FeedEntry(
+                        id = "http://push-pub.appspot.com/feed/5767968478724096",
+                        published = ZonedDateTime.of(2020, Month.SEPTEMBER.value, 12, 7, 23, 51, 0, ZoneId.of("UTC")),
+                        updated = ZonedDateTime.of(2020, Month.SEPTEMBER.value, 12, 7, 23, 51, 0, ZoneId.of("UTC")),
+                        title = "10",
+                        link = Link(
+                                title = "10",
+                                href = "http://push-pub.appspot.com/entry/5767968478724096",
+                                type = "text/html",
+                                rel = "alternate"
+                        )
+                ),
+                aaaalinkszzzz = listOf(
+                        Link(rel = "hub", href = "http://pubsubhubbub.superfeedr.com"),
+                        Link(rel = "self", href = "http://push-pub.appspot.com/feed"),
+                        Link(title = "Publisher example", rel = "self", href = "http://push-pub.appspot.com/feed", type = "application/atom+xml"),
+                        Link(title = "Publisher example", rel = "alternate", href = "http://push-pub.appspot.com/", type = "text/html"),
+                        Link(title = "", rel = "hub", href = "https://pubsubhubbub.superfeedr.com", type = "text/html"),
+                )
+        )
+
+        val actualDeserializedFeed: PubFeed = xmlMapper.readValue(s, PubFeed::class.java)
+        assertEquals(expected, actualDeserializedFeed)
     }
 }
 
-data class PubFeed(
-        val title: String
+
+private data class PubFeed(
+        val title: String,
+        val entry: FeedEntry,
+        /*
+        these annotations say:
+        - `@JacksonXmlElementWrapper` there are multiple elements in the <feed> with the same name,
+        - `useWrapping = false` but they are not grouped together in an `<elements>` (plural) element. They just all hang around in <feed>
+        - `@JacksonXmlProperty` the field `links` is a property (ie. it appears in the XML)
+        - `localName = "link"` the name of each element inside `<feed>` is called `link` (needed because my field is not named `link`)
+         */
+        @JacksonXmlElementWrapper(useWrapping = false)
+        @JacksonXmlProperty(localName = "link")
+        val aaaalinkszzzz: List<Link>
+)
+
+
+private data class FeedEntry(
+        val id: String,
+        val published: ZonedDateTime,
+        val updated: ZonedDateTime,
+        val title: String,
+        val link: Link,
+)
+
+private data class Link(
+        @JacksonXmlProperty(isAttribute = true) val title: String? = null,
+        @JacksonXmlProperty(isAttribute = true) val href: String? = null,
+        @JacksonXmlProperty(isAttribute = true) val rel: String? = null,
+        @JacksonXmlProperty(isAttribute = true) val type: String? = null, // todo should probably be some other type, which directly maps to text/html. i'm sure there's a Ktor class/enum for this, but i'm too lazy to search for it now.
 )
