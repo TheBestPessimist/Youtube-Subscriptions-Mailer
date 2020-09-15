@@ -6,6 +6,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
 import com.fasterxml.jackson.module.kotlin.KotlinModule
+import org.intellij.lang.annotations.Language
 import org.junit.jupiter.api.Test
 import java.time.Month
 import java.time.ZoneId
@@ -13,10 +14,11 @@ import java.time.ZonedDateTime
 import kotlin.test.assertEquals
 
 
-class XMLSerializeTest {
+class JacksonXmlMapperTest {
     @Test
     fun `deserialize xml`() {
 
+        @Language("XML")
         val s = """<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 <status feed="http://push-pub.appspot.com/feed" xmlns="http://superfeedr.com/xmpp-pubsub-ext">
