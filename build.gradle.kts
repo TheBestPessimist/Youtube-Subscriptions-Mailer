@@ -5,6 +5,7 @@ val kotlin_version: String by project
 val logback_version: String by project
 val coroutines_version: String by project
 val jackson_version: String by project
+val junit5_version: String by project
 
 group = "land.tbp"
 version = "0.0.1"
@@ -44,9 +45,17 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
     testImplementation("io.ktor:ktor-client-mock:$ktor_version")
     testImplementation("io.ktor:ktor-client-mock-jvm:$ktor_version")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:$junit5_version")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junit5_version")
+
+
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jackson_version")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jackson_version")
 
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>() {
