@@ -14,7 +14,7 @@ version = "0.0.1"
 plugins {
     application
     java
-    kotlin("jvm") version "1.4.0"
+    kotlin("jvm") version "1.4.21"
 }
 
 application {
@@ -61,5 +61,5 @@ tasks.named<Test>("test") {
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>() {
-    kotlinOptions.jvmTarget = JavaVersion.VERSION_14.toString()
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_15.toString()
 }
