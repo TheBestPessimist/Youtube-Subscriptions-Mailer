@@ -1,13 +1,12 @@
 @file:Suppress("PropertyName")
 
+val kotlin_version = "1.5.0"
+val ktor_version = kotlin_version
+val coroutines_version = kotlin_version
+val logback_version = "1.2.3"
+val jacksonVersion = "2.12.3"
+val junit5_version = "5.7.2"
 
-val ktor_version: String by project
-val kotlin_version: String by project
-val logback_version: String by project
-val coroutines_version: String by project
-val jackson_version: String by project
-val jacksonVersion = "2.12.1"
-val junit5_version: String by project
 
 group = "land.tbp"
 version = "0.0.1"
@@ -23,10 +22,7 @@ application {
 }
 
 repositories {
-    mavenLocal()
-    jcenter()
-    maven { url = uri("https://kotlin.bintray.com/ktor") }
-    maven { url = uri("https://kotlin.bintray.com/kotlinx") }
+    mavenCentral()
 }
 
 dependencies {
@@ -39,16 +35,11 @@ dependencies {
     implementation("io.ktor:ktor-jackson:$ktor_version")
     implementation("io.ktor:ktor-client-core:$ktor_version")
     implementation("io.ktor:ktor-client-core-jvm:$ktor_version")
-//    implementation("io.ktor:ktor-client-http-timeout:$ktor_version") // todo this library is not found anywhere for some reason
+//    implementation("io.ktor:ktor-client-http-timeout:$ktor_version") // TODO this library is not found anywhere for some reason
     implementation("io.ktor:ktor-client-json-jvm:$ktor_version")
     implementation("io.ktor:ktor-client-apache:$ktor_version")
     implementation("io.ktor:ktor-client-gson:$ktor_version")
     implementation("io.ktor:ktor-client-logging-jvm:$ktor_version")
-    testImplementation("io.ktor:ktor-server-tests:$ktor_version")
-    testImplementation("io.ktor:ktor-client-mock:$ktor_version")
-    testImplementation("io.ktor:ktor-client-mock-jvm:$ktor_version")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:$junit5_version")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junit5_version")
 
 //
 //    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jackson_version")
@@ -57,10 +48,21 @@ dependencies {
 
 
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
-    implementation("com.fasterxml.jackson.module:jackson-module-parameter-names")
+    implementation("com.fasterxml.jackson.module:jackson-module-parameter-names:$jacksonVersion")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jacksonVersion")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion")
     implementation("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
+
+
+
+
+
+    testImplementation(platform("org.junit:junit-bom:$junit5_version"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("io.ktor:ktor-server-tests:$ktor_version")
+    testImplementation("io.ktor:ktor-client-mock:$ktor_version")
+    testImplementation("io.ktor:ktor-client-mock-jvm:$ktor_version")
+
 
 }
 
