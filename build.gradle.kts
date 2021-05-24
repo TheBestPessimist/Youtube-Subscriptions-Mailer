@@ -6,6 +6,7 @@ val kotlin_version: String by project
 val logback_version: String by project
 val coroutines_version: String by project
 val jackson_version: String by project
+val jacksonVersion = "2.12.1"
 val junit5_version: String by project
 
 group = "land.tbp"
@@ -49,10 +50,17 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junit5_version")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junit5_version")
 
+//
+//    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jackson_version")
+//    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jackson_version")
+//    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jackson_version")
 
-    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jackson_version")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jackson_version")
-    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jackson_version")
+
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
+    implementation("com.fasterxml.jackson.module:jackson-module-parameter-names")
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jacksonVersion")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion")
+    implementation("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
 
 }
 
