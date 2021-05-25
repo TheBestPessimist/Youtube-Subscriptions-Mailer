@@ -1,1 +1,1 @@
-rootProject.name = "youtube-subscriptions-mailer"
+rootProject.name = "Youtube Subscriptions Mailer"
