@@ -1,7 +1,7 @@
 val javaVersion = JavaVersion.VERSION_16
-val kotlinVersion = "1.5.0"
-val ktorVersion = kotlinVersion
-val coroutinesVersion = kotlinVersion
+val kotlinVersion = "1.5.10"
+val ktorVersion = "1.5.0"
+val coroutinesVersion = "1.5.0"
 val logbackVersion = "1.2.3"
 val jacksonVersion = "2.12.3"
 val junitVersion = "5.7.2"
@@ -17,7 +17,7 @@ java.targetCompatibility = javaVersion
 plugins {
     application
     java
-    kotlin("jvm") version "1.5.0"
+    kotlin("jvm") version "1.5.10"
 }
 
 repositories {
