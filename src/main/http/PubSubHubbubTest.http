@@ -1,0 +1,14 @@
+# curl -X POST 'http://pubsubhubbub.superfeedr.com/' -d'hub.verify=sync' -d'hub.topic=https://superfeedr-blog-feed.herokuapp.com/' -d'hub.callback=http://push-pub.appspot.com/webhook' -d'hub.mode=subscribe'
+POST http://pubsubhubbub.superfeedr.com/
+Content-Type: application/x-www-form-urlencoded
+
+hub.verify=sync&hub.topic=https://superfeedr-blog-feed.herokuapp.com/&hub.callback=http://push-pub.appspot.com/webhook&hub.mode=subscribe
+
+###
+
+POST http://pubsubhubbub.superfeedr.com/
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+
+hub.verify=sync&hub.topic=http://push-pub.appspot.com/feed&hub.callback=https://b8edfa82b8d5.ngrok.io/pshb&hub.mode=subscribe&hub.secret=12345678901112131415161718192021222324252627282930
+
