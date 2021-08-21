@@ -1,6 +1,6 @@
 val javaVersion = JavaVersion.VERSION_16
-val kotlinVersion = "1.5.10"
-val ktorVersion = "1.5.0"
+val kotlinVersion = "1.5.21"
+val ktorVersion = "1.6.0"
 val coroutinesVersion = "1.5.0"
 val logbackVersion = "1.2.3"
 val jacksonVersion = "2.12.3"
@@ -17,7 +17,7 @@ java.targetCompatibility = javaVersion
 plugins {
     application
     java
-    kotlin("jvm") version "1.5.10"
+    kotlin("jvm") version "1.5.21"
 }
 
 repositories {
@@ -26,25 +26,20 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion")
-    implementation("io.ktor:ktor-server-netty:$ktorVersion")
-    implementation("ch.qos.logback:logback-classic:$logbackVersion")
-    implementation("io.ktor:ktor-server-core:$ktorVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
+
+    implementation("ch.qos.logback:logback-classic:$logbackVersion")
+
+    implementation("io.ktor:ktor-server-netty:$ktorVersion")
+    implementation("io.ktor:ktor-server-core:$ktorVersion")
     implementation("io.ktor:ktor-auth:$ktorVersion")
     implementation("io.ktor:ktor-jackson:$ktorVersion")
     implementation("io.ktor:ktor-client-core:$ktorVersion")
     implementation("io.ktor:ktor-client-core-jvm:$ktorVersion")
-//    implementation("io.ktor:ktor-client-http-timeout:$ktor_version") // TODO this library is not found anywhere for some reason
     implementation("io.ktor:ktor-client-json-jvm:$ktorVersion")
     implementation("io.ktor:ktor-client-apache:$ktorVersion")
     implementation("io.ktor:ktor-client-gson:$ktorVersion")
     implementation("io.ktor:ktor-client-logging-jvm:$ktorVersion")
-
-//
-//    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jackson_version")
-//    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jackson_version")
-//    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jackson_version")
-
 
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
     implementation("com.fasterxml.jackson.module:jackson-module-parameter-names:$jacksonVersion")
@@ -52,17 +47,15 @@ dependencies {
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion")
     implementation("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
 
-
-
-
-
     testImplementation(platform("org.junit:junit-bom:$junitVersion"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.junit.jupiter:junit-jupiter-engine")
+
+    testImplementation("org.assertj:assertj-core:$assertJVersion")
+
     testImplementation("io.ktor:ktor-server-tests:$ktorVersion")
     testImplementation("io.ktor:ktor-client-mock:$ktorVersion")
     testImplementation("io.ktor:ktor-client-mock-jvm:$ktorVersion")
-    testImplementation("org.assertj:assertj-core:$assertJVersion")
 
 
     configurations.all {
@@ -78,7 +71,7 @@ dependencies {
 tasks {
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         kotlinOptions {
-            freeCompilerArgs = listOf("-Xjsr305=strict")
+            freeCompilerArgs += listOf("-Xjsr305=strict")
             jvmTarget = javaVersion.majorVersion
             languageVersion = "1.5"
             apiVersion = "1.5"
@@ -88,7 +81,5 @@ tasks {
 
     test {
         useJUnitPlatform()
-        // Speedy tests.
-        maxParallelForks = (Runtime.getRuntime().availableProcessors() / 2).takeIf { it > 0 } ?: 1
     }
 }
