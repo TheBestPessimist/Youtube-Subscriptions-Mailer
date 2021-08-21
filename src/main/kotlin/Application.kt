@@ -19,7 +19,7 @@ import land.tbp.pubSubHubbub.installPubSubHubbubRoutes
 import land.tbp.pubSubHubbub.subscribble
 import org.slf4j.event.Level
 
-fun main(args: Array<String>): Unit {
+fun main() {
     val embeddedServer: NettyApplicationEngine = embeddedServer(Netty, 6969) {
 
         module()
