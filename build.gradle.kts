@@ -1,11 +1,11 @@
 val javaVersion = JavaVersion.VERSION_16
 val kotlinVersion = "1.5.21"
-val ktorVersion = "1.6.0"
-val coroutinesVersion = "1.5.0"
-val logbackVersion = "1.2.3"
-val jacksonVersion = "2.12.3"
+val ktorVersion = "1.6.2"
+val coroutinesVersion = "1.5.1"
+val logbackVersion = "1.2.5"
+val jacksonVersion = "2.12.4"
 val junitVersion = "5.7.2"
-val assertJVersion = "3.19.0"
+val assertJVersion = "3.20.2"
 
 
 group = "land.tbp"
@@ -47,6 +47,8 @@ dependencies {
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion")
     implementation("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
 
+    implementation("com.google.api-client:google-api-client:1.31.5")
+    //
     testImplementation(platform("org.junit:junit-bom:$junitVersion"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.junit.jupiter:junit-jupiter-engine")
