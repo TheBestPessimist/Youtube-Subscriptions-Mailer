@@ -3,7 +3,6 @@ package land.tbp.land.tbp.youtube
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport
 import com.google.api.services.youtube.YouTube
 import com.google.api.services.youtube.model.SubscriptionListResponse
-import java.security.GeneralSecurityException
 
 
 /**
@@ -21,18 +20,14 @@ val httpTransport = GoogleNetHttpTransport.newTrustedTransport()
 val googleAuthService = GoogleAuthService(httpTransport, GoogleCredentialsRepository())
 val youtubeService = YoutubeService(httpTransport)
 
-/**
- * Call function to create API service object. Define and
- * execute API request. Print API response.
- *
- * @throws GeneralSecurityException, IOException, GoogleJsonResponseException
- */
-fun main(args: Array<String>) {
+
+
+fun main() {
 //    newUser(ChannelIDs.Subscriptions.public1)
 //    newUser(ChannelIDs.Subscriptions.private)
 
     existingUser("cristian.nahsuc@gmail.com")
-//    existingUser("cristian@tbp.land")
+    existingUser("cristian@tbp.land")
 
 }
 
@@ -49,6 +44,9 @@ fun existingUser(user: String) {
         .execute()
 
     println(subscriptions)
+    println(subscriptions.pageInfo.totalResults)
+    println()
+    println()
 }
 
 private fun newUser(channelId: String) {
@@ -58,11 +56,15 @@ private fun newUser(channelId: String) {
     val subscriptions: SubscriptionListResponse = youtube.subscriptions()
         .list("snippet,contentDetails")
         .setPrettyPrint(true)
-        .setChannelId(channelId)
+//        .setChannelId(channelId)
+        .setMine(true)
         .setFields("*")
         .execute()
 
     println(subscriptions)
+    println(subscriptions.pageInfo.totalResults)
+    println()
+    println()
 }
 
 
