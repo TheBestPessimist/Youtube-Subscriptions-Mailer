@@ -47,7 +47,10 @@ dependencies {
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion")
     implementation("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
 
-    implementation("com.google.api-client:google-api-client:1.31.5")
+    implementation("com.google.api-client:google-api-client:1.32.1")
+    implementation("com.google.oauth-client:google-oauth-client-jetty:1.31.5")
+    implementation("com.google.apis:google-api-services-youtube:v3-rev222-1.25.0")
+
     //
     testImplementation(platform("org.junit:junit-bom:$junitVersion"))
     testImplementation("org.junit.jupiter:junit-jupiter")
@@ -73,7 +76,7 @@ dependencies {
 tasks {
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         kotlinOptions {
-            freeCompilerArgs += listOf("-Xjsr305=strict")
+            freeCompilerArgs = freeCompilerArgs + listOf("-Xjsr305=strict")
             jvmTarget = javaVersion.majorVersion
             languageVersion = "1.5"
             apiVersion = "1.5"
