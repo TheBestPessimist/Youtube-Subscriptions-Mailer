@@ -1,6 +1,11 @@
 package land.tbp.land.tbp.youtube
 
+import com.google.api.client.googleapis.batch.json.JsonBatchCallback
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport
+import com.google.api.client.googleapis.json.GoogleJsonError
+import com.google.api.client.googleapis.json.GoogleJsonErrorContainer
+import com.google.api.client.http.HttpHeaders
+import com.google.api.client.http.HttpRequest
 import com.google.api.services.youtube.YouTube
 import com.google.api.services.youtube.model.SubscriptionListResponse
 
@@ -26,7 +31,7 @@ fun main() {
 //    newUser(ChannelIDs.Subscriptions.public1)
 //    newUser(ChannelIDs.Subscriptions.private)
 
-    existingUser("cristian.nahsuc@gmail.com")
+//    existingUser("cristian.nahsuc@gmail.com")
     existingUser("cristian@tbp.land")
 
 }
@@ -35,18 +40,27 @@ fun existingUser(user: String) {
     val credential = googleAuthService.forUser(user)
     val youtube: YouTube = youtubeService.createForUser(credential)
 
-    val subscriptions: SubscriptionListResponse = youtube.subscriptions()
-        .list("snippet,contentDetails")
+    val listRequest: HttpRequest = youtube.subscriptions()
+        .list(listOf("snippet","contentDetails"))
         .setPrettyPrint(true)
         .setMine(true)
-//        .setChannelId(channelId)
         .setFields("*")
-        .execute()
+        .buildHttpRequest()
 
-    println(subscriptions)
-    println(subscriptions.pageInfo.totalResults)
-    println()
-    println()
+    youtube.batch()
+        .queue(listRequest, SubscriptionListResponse::class.java, GoogleJsonErrorContainer::class.java,object : JsonBatchCallback<SubscriptionListResponse>() {
+            override fun onSuccess(s: SubscriptionListResponse, responseHeaders: HttpHeaders?) {
+                println(s)
+                println(s.pageInfo.totalResults)
+                println()
+                println()
+            }
+
+            override fun onFailure(e: GoogleJsonError, responseHeaders: HttpHeaders) {
+                error(e) // todo no idea what to do in case of error `¯\_(ツ)_/¯`
+            }
+        })
+        .execute()
 }
 
 private fun newUser(channelId: String) {
@@ -54,9 +68,8 @@ private fun newUser(channelId: String) {
     val youtube: YouTube = youtubeService.createForUser(credential)
 
     val subscriptions: SubscriptionListResponse = youtube.subscriptions()
-        .list("snippet,contentDetails")
+        .list(listOf("snippet","contentDetails"))
         .setPrettyPrint(true)
-//        .setChannelId(channelId)
         .setMine(true)
         .setFields("*")
         .execute()
