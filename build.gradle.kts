@@ -1,5 +1,4 @@
 val javaVersion = JavaVersion.VERSION_16
-val kotlinVersion = "1.5.21"
 val ktorVersion = "1.6.2"
 val coroutinesVersion = "1.5.1"
 val logbackVersion = "1.2.5"
@@ -17,7 +16,7 @@ java.targetCompatibility = javaVersion
 plugins {
     application
     java
-    kotlin("jvm") version "1.5.21"
+    kotlin("jvm") version "1.5.30"
 }
 
 repositories {
@@ -25,7 +24,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
 
     implementation("ch.qos.logback:logback-classic:$logbackVersion")
@@ -48,13 +47,12 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
 
     implementation("com.google.api-client:google-api-client:1.32.1")
-    implementation("com.google.oauth-client:google-oauth-client-jetty:1.31.5")
-    implementation("com.google.apis:google-api-services-youtube:v3-rev222-1.25.0")
+    implementation("com.google.oauth-client:google-oauth-client-jetty:1.32.1")
+    implementation("com.google.apis:google-api-services-youtube:v3-rev20210811-1.32.1")
 
     //
-    testImplementation(platform("org.junit:junit-bom:$junitVersion"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-    testImplementation("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation("org.junit.jupiter:junit-jupiter:$junitVersion")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 
     testImplementation("org.assertj:assertj-core:$assertJVersion")
 
