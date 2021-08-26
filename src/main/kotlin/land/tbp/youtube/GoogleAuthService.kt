@@ -26,7 +26,7 @@ class GoogleAuthService(
     private val JSON_FACTORY: JsonFactory = Utils.getDefaultJsonFactory()
     private val AUTH_SCOPES = mutableListOf(YouTubeScopes.YOUTUBE_READONLY, "https://www.googleapis.com/auth/userinfo.email")
 
-    val CLIENT_SECRETS = "C:/work/Youtube Subscriptions Mailer/config/private/client_secret.json" // todo from eng
+    val CLIENT_SECRETS = "C:/work/Youtube Subscriptions Mailer/config/private/client_secret.json" // todo from env
     val googleClientSecret = GoogleClientSecrets.load(JSON_FACTORY, Paths.get(CLIENT_SECRETS).bufferedReader())
 
     private val credentialRefreshListener: CredentialRefreshListener by lazy {

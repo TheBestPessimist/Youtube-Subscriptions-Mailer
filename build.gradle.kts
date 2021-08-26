@@ -29,16 +29,18 @@ dependencies {
 
     implementation("ch.qos.logback:logback-classic:$logbackVersion")
 
-    implementation("io.ktor:ktor-server-netty:$ktorVersion")
+    // ktor server
     implementation("io.ktor:ktor-server-core:$ktorVersion")
-    implementation("io.ktor:ktor-auth:$ktorVersion")
+    implementation("io.ktor:ktor-server-netty:$ktorVersion")
     implementation("io.ktor:ktor-jackson:$ktorVersion")
-    implementation("io.ktor:ktor-client-core:$ktorVersion")
-    implementation("io.ktor:ktor-client-core-jvm:$ktorVersion")
-    implementation("io.ktor:ktor-client-json-jvm:$ktorVersion")
+    implementation("io.ktor:ktor-auth:$ktorVersion")
+
+    // ktor client
     implementation("io.ktor:ktor-client-apache:$ktorVersion")
-    implementation("io.ktor:ktor-client-gson:$ktorVersion")
     implementation("io.ktor:ktor-client-logging-jvm:$ktorVersion")
+    implementation("io.ktor:ktor-client-jackson:$ktorVersion")
+
+
 
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
     implementation("com.fasterxml.jackson.module:jackson-module-parameter-names:$jacksonVersion")
@@ -56,9 +58,9 @@ dependencies {
 
     testImplementation("org.assertj:assertj-core:$assertJVersion")
 
-    testImplementation("io.ktor:ktor-server-tests:$ktorVersion")
-    testImplementation("io.ktor:ktor-client-mock:$ktorVersion")
-    testImplementation("io.ktor:ktor-client-mock-jvm:$ktorVersion")
+    testImplementation("io.ktor:ktor-server-test-host:$ktorVersion")
+//    testImplementation("io.ktor:ktor-client-mock:$ktorVersion")
+//    testImplementation("io.ktor:ktor-client-mock-jvm:$ktorVersion")
 
 
     configurations.all {
@@ -74,7 +76,8 @@ dependencies {
 tasks {
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         kotlinOptions {
-            freeCompilerArgs = freeCompilerArgs + listOf("-Xjsr305=strict")
+            @Suppress("SuspiciousCollectionReassignment")
+            freeCompilerArgs += listOf("-Xjsr305=strict")
             jvmTarget = javaVersion.majorVersion
             languageVersion = "1.5"
             apiVersion = "1.5"
