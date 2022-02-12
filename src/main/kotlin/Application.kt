@@ -1,6 +1,7 @@
 package land.tbp
 
 import com.fasterxml.jackson.databind.SerializationFeature
+import com.google.api.services.youtube.YouTubeScopes
 import com.sksamuel.hoplite.ConfigLoader
 import com.sksamuel.hoplite.parsers.PropsParser
 import io.ktor.application.*
@@ -20,6 +21,8 @@ import land.tbp.land.tbp.youtube.googleOAuth
 import org.slf4j.event.Level
 import java.io.File
 
+val AUTH_SCOPES = mutableListOf(YouTubeScopes.YOUTUBE_READONLY, "https://www.googleapis.com/auth/userinfo.email")
+
 val config: Config = ConfigLoader.Builder()
     .addFileExtensionMapping("env", PropsParser())
     .build()
@@ -33,7 +36,7 @@ fun main() {
 
 
     val embeddedServer: NettyApplicationEngine = embeddedServer(Netty, 6969, watchPaths = listOf("classes", "resources")) {
-        module()
+//        module()
         googleOAuth()
     }
 

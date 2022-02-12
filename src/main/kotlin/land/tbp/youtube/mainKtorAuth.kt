@@ -1,17 +1,24 @@
 package land.tbp.land.tbp.youtube
 
+import com.fasterxml.jackson.databind.DeserializationFeature
+import com.fasterxml.jackson.databind.PropertyNamingStrategies
 import io.ktor.application.*
 import io.ktor.auth.*
 import io.ktor.client.*
 import io.ktor.client.engine.apache.*
 import io.ktor.client.features.json.*
 import io.ktor.client.features.logging.*
+import io.ktor.client.request.*
 import io.ktor.http.*
 import io.ktor.response.*
 import io.ktor.routing.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
+import io.ktor.sessions.*
+import land.tbp.AUTH_SCOPES
 import land.tbp.config
+import land.tbp.land.tbp.GoogleAuthRepo
+import land.tbp.land.tbp.fdsa
 
 
 fun main() {
@@ -27,6 +34,23 @@ http://localhost:6969/login
 
  */
 fun Application.googleOAuth() {
+    val googleHttpClient = HttpClient(Apache) {
+        install(JsonFeature) {
+            serializer = JacksonSerializer() {
+                disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
+                propertyNamingStrategy = PropertyNamingStrategies.SNAKE_CASE
+            }
+        }
+        install(Logging) { level = LogLevel.ALL }
+    }
+
+//    install(ContentNegotiation) {
+//        jackson {
+//            enable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
+//            propertyNamingStrategy = PropertyNamingStrategies.SNAKE_CASE
+//        }
+//    }
+
     install(Authentication) {
         oauth("GoogleOAuth") {
             urlProvider = { "http://localhost:6969/callback" }
@@ -38,7 +62,7 @@ fun Application.googleOAuth() {
                     requestMethod = HttpMethod.Post,
                     clientId = config.googleCredentials.clientId,
                     clientSecret = config.googleCredentials.clientSecret,
-                    defaultScopes = listOf("https://www.googleapis.com/auth/userinfo.profile"),
+                    defaultScopes = listOf("https://www.googleapis.com/auth/userinfo.profile") + AUTH_SCOPES,
                     authorizeUrlInterceptor = {
                         /*
                         Technical:
@@ -50,15 +74,12 @@ fun Application.googleOAuth() {
 //                    nonceManager = StatelessHmacNonceManager("1".toByteArray()) // todo: is this safe since "1" is hardcoded? no idea.
                 )
             }
-            client = HttpClient(Apache) {
-                install(JsonFeature) {
-                    serializer = JacksonSerializer()
-                }
-                install(Logging) {
-                    level = LogLevel.ALL
-                }
-            }
+            client = googleHttpClient
         }
+    }
+
+    install(Sessions) {
+        cookie<UserCookie>("user_cookie")
     }
 
     routing {
@@ -69,16 +90,38 @@ fun Application.googleOAuth() {
 
             get("/callback") {
                 val principal: OAuthAccessTokenResponse.OAuth2 = call.principal()!!
-                principal.accessToken
                 principal.refreshToken!! //<- this must not be null!
-                println()
-                println()
-                println()
-                println(principal)
-//                call.sessions.set(UserSession(principal?.accessToken.toString()))
-                call.respond("Thank you for authenticating with us. Your credentials are safe with us :^)")
-//                call.respondRedirect("/hello") // todo. i definitely wanna redirect, because otherwise the URL will contain the secrets and all the other crap
+                log.info(principal.toString())
+
+                call.sessions.set(UserCookie(principal.accessToken))
+                GoogleAuthRepo.persistTokenResponse(principal)
+
+
+                call.respondRedirect("/authentication-successful")
             }
+        }
+
+        get("/authentication-successful") {
+            fdsa()
+
+            val cookie = call.sessions.get<UserCookie>()!!
+            val userInfo = googleHttpClient.get<GoogleUserInfo>("https://www.googleapis.com/oauth2/v2/userinfo") {
+                headers {
+                    append(HttpHeaders.Authorization, "Bearer ${cookie.token}")
+                }
+            }
+
+            call.respond(userInfo.toString())
         }
     }
 }
+
+data class UserCookie(val token: String)
+
+data class GoogleUserInfo(
+    val name: String,
+    val givenName: String,
+    val familyName: String,
+    val picture: String,
+    val locale: String
+)
