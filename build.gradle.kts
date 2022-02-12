@@ -1,10 +1,13 @@
 val javaVersion = JavaVersion.VERSION_16
-val ktorVersion = "1.6.2"
-val coroutinesVersion = "1.5.1"
-val logbackVersion = "1.2.5"
-val jacksonVersion = "2.12.4"
-val junitVersion = "5.7.2"
-val assertJVersion = "3.20.2"
+val kotlinLanguageVersion = "1.6"
+val coroutinesVersion = "1.6.0"
+val ktorVersion = "1.6.7"
+val logbackVersion = "1.2.10"
+val jacksonVersion = "2.13.1"
+val junitVersion = "5.8.2"
+val assertJVersion = "3.22.0"
+val googleApiClientVersion = "1.33.2"
+val googleYoutubeApiVersion = "v3-rev20210915-1.32.1"
 
 
 group = "land.tbp"
@@ -16,7 +19,7 @@ java.targetCompatibility = javaVersion
 plugins {
     application
     java
-    kotlin("jvm") version "1.5.30"
+    kotlin("jvm") version "1.6.10"
 }
 
 repositories {
@@ -41,18 +44,20 @@ dependencies {
     implementation("io.ktor:ktor-client-jackson:$ktorVersion")
 
 
-
+    // jackson
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
     implementation("com.fasterxml.jackson.module:jackson-module-parameter-names:$jacksonVersion")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jacksonVersion")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion")
     implementation("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
 
-    implementation("com.google.api-client:google-api-client:1.32.1")
-    implementation("com.google.oauth-client:google-oauth-client-jetty:1.32.1")
-    implementation("com.google.apis:google-api-services-youtube:v3-rev20210811-1.32.1")
 
-    //
+    // google
+    implementation("com.google.api-client:google-api-client:$googleApiClientVersion")
+    implementation("com.google.oauth-client:google-oauth-client-jetty:$googleApiClientVersion")
+    implementation("com.google.apis:google-api-services-youtube:$googleYoutubeApiVersion")
+
+    // test
     testImplementation("org.junit.jupiter:junit-jupiter:$junitVersion")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 
@@ -79,13 +84,17 @@ tasks {
             @Suppress("SuspiciousCollectionReassignment")
             freeCompilerArgs += listOf("-Xjsr305=strict")
             jvmTarget = javaVersion.majorVersion
-            languageVersion = "1.5"
-            apiVersion = "1.5"
+            languageVersion = kotlinLanguageVersion
+            apiVersion = kotlinLanguageVersion
         }
     }
 
 
     test {
         useJUnitPlatform()
+    }
+
+    wrapper {
+        gradleVersion = "7.4"
     }
 }
