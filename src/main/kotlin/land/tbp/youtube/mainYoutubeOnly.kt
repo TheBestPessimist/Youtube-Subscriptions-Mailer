@@ -29,7 +29,7 @@ val youtubeService = YoutubeService(httpTransport)
 
 fun main() {
 //    newUser(ChannelIDs.Subscriptions.public1)
-//    newUser(ChannelIDs.Subscriptions.private)
+    newUser(ChannelIDs.Subscriptions.private)
 
 //    existingUser("cristian.nahsuc@gmail.com")
     existingUser("cristian@tbp.land")

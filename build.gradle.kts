@@ -7,7 +7,9 @@ val jacksonVersion = "2.13.1"
 val junitVersion = "5.8.2"
 val assertJVersion = "3.22.0"
 val googleApiClientVersion = "1.33.2"
+val googleOauthClientVersion = "1.33.1"
 val googleYoutubeApiVersion = "v3-rev20210915-1.32.1"
+val hopliteVersion = "1.4.16"
 
 
 group = "land.tbp"
@@ -42,6 +44,7 @@ dependencies {
     implementation("io.ktor:ktor-client-apache:$ktorVersion")
     implementation("io.ktor:ktor-client-logging-jvm:$ktorVersion")
     implementation("io.ktor:ktor-client-jackson:$ktorVersion")
+    implementation("io.ktor:ktor-auth:$ktorVersion")
 
 
     // jackson
@@ -54,8 +57,11 @@ dependencies {
 
     // google
     implementation("com.google.api-client:google-api-client:$googleApiClientVersion")
-    implementation("com.google.oauth-client:google-oauth-client-jetty:$googleApiClientVersion")
+    implementation("com.google.oauth-client:google-oauth-client-jetty:$googleOauthClientVersion")
     implementation("com.google.apis:google-api-services-youtube:$googleYoutubeApiVersion")
+
+
+    implementation("com.sksamuel.hoplite:hoplite-core:$hopliteVersion")
 
     // test
     testImplementation("org.junit.jupiter:junit-jupiter:$junitVersion")

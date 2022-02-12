@@ -1,7 +1,5 @@
 package land.tbp.land.tbp.youtube
 
-import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets
-import com.google.api.client.googleapis.util.Utils
 import io.ktor.application.*
 import io.ktor.auth.*
 import io.ktor.client.*
@@ -13,36 +11,43 @@ import io.ktor.response.*
 import io.ktor.routing.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
-import io.ktor.util.*
-import java.nio.file.Paths
-import kotlin.io.path.bufferedReader
-
-val CLIENT_SECRETS = "C:/work/Youtube Subscriptions Mailer/config/private/client_secret.json" // todo from env
-val googleClientSecret = GoogleClientSecrets.load(Utils.getDefaultJsonFactory(), Paths.get(CLIENT_SECRETS).bufferedReader())
+import land.tbp.config
 
 
 fun main() {
-    embeddedServer(Netty, port = 8080) {
-        youtubeModule()
+    System.setProperty("io.ktor.development", "true")
+    val embeddedServer: NettyApplicationEngine = embeddedServer(Netty, 6969, watchPaths = listOf("classes", "resources")) {
+
+        googleOAuth()
     }.start(wait = true)
 }
 
+/*
+http://localhost:6969/login
 
-fun Application.youtubeModule() {
+ */
+fun Application.googleOAuth() {
     install(Authentication) {
         oauth("GoogleOAuth") {
-            urlProvider = { "http://localhost:8080/callback" }
+            urlProvider = { "http://localhost:6969/callback" }
             providerLookup = {
                 OAuthServerSettings.OAuth2ServerSettings(
                     name = "google",
-                    authorizeUrl = googleClientSecret.details.authUri,
-                    accessTokenUrl = googleClientSecret.details.tokenUri,
+                    authorizeUrl = "https://accounts.google.com/o/oauth2/auth",
+                    accessTokenUrl = "https://oauth2.googleapis.com/token",
                     requestMethod = HttpMethod.Post,
-                    clientId = googleClientSecret.details.clientId,
-                    clientSecret = googleClientSecret.details.clientSecret,
+                    clientId = config.googleCredentials.clientId,
+                    clientSecret = config.googleCredentials.clientSecret,
                     defaultScopes = listOf("https://www.googleapis.com/auth/userinfo.profile"),
-                    nonceManager = StatelessHmacNonceManager("1".toByteArray()) // todo: is this safe since "1" is hardcoded? no idea.
-                    // Technical note: access_type=offline, which is mandatory for any sort of app is not present in this request, however the refresh_token is still returned by google. Should I cross my fingers that this is enough?
+                    authorizeUrlInterceptor = {
+                        /*
+                        Technical:
+                        `access_type=offline` is mandatory to receive the refresh_token from google.
+                        Workaround for https://youtrack.jetbrains.com/issue/KTOR-2128
+                         */
+                        this.parameters["access_type"] = "offline"
+                    },
+//                    nonceManager = StatelessHmacNonceManager("1".toByteArray()) // todo: is this safe since "1" is hardcoded? no idea.
                 )
             }
             client = HttpClient(Apache) {
@@ -72,7 +77,7 @@ fun Application.youtubeModule() {
                 println(principal)
 //                call.sessions.set(UserSession(principal?.accessToken.toString()))
                 call.respond("Thank you for authenticating with us. Your credentials are safe with us :^)")
-//                call.respondRedirect("/hello") // todo. i definitely wanna redirect, because otherwise the URL will contain the secrects and all the other crap
+//                call.respondRedirect("/hello") // todo. i definitely wanna redirect, because otherwise the URL will contain the secrets and all the other crap
             }
         }
     }

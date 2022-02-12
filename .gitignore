@@ -173,3 +173,4 @@ gradle-app.setting
 /.idea/modules/
 /.idea/libraries-with-intellij-classes.xml
 /config/private/
+/.env
