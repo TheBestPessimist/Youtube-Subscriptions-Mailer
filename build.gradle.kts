@@ -10,7 +10,10 @@ val googleApiClientVersion = "1.33.2"
 val googleOauthClientVersion = "1.33.1"
 val googleYoutubeApiVersion = "v3-rev20210915-1.32.1"
 val hopliteVersion = "1.4.16"
-
+val sqliteJdbcVersion = "3.36.0.3"
+val hikariCpVersion = "5.0.1"
+val flywayVersion = "8.5.0"
+val jooqVersion = "3.16.4"
 
 group = "land.tbp"
 version = "0.0.1"
@@ -60,6 +63,14 @@ dependencies {
     implementation("com.google.oauth-client:google-oauth-client-jetty:$googleOauthClientVersion")
     implementation("com.google.apis:google-api-services-youtube:$googleYoutubeApiVersion")
 
+    // database
+    implementation("org.xerial:sqlite-jdbc:$sqliteJdbcVersion")
+    implementation("com.zaxxer:HikariCP:$hikariCpVersion")
+    implementation("org.flywaydb:flyway-core:$flywayVersion")
+    implementation("org.jooq:jooq:$jooqVersion")
+    implementation("org.jooq:jooq-meta:$jooqVersion")
+    implementation("org.jooq:jooq-codegen:$jooqVersion")
+
 
     implementation("com.sksamuel.hoplite:hoplite-core:$hopliteVersion")
 
@@ -70,7 +81,7 @@ dependencies {
     testImplementation("org.assertj:assertj-core:$assertJVersion")
 
     testImplementation("io.ktor:ktor-server-test-host:$ktorVersion")
-//    testImplementation("io.ktor:ktor-client-mock:$ktorVersion")
+    //    testImplementation("io.ktor:ktor-client-mock:$ktorVersion")
 //    testImplementation("io.ktor:ktor-client-mock-jvm:$ktorVersion")
 
 
