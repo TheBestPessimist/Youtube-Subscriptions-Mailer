@@ -1,3 +1,5 @@
+import org.jooq.meta.jaxb.ForcedType
+
 val javaVersion = JavaVersion.VERSION_16
 val kotlinLanguageVersion = "1.6"
 val coroutinesVersion = "1.6.0"
@@ -24,7 +26,9 @@ java.targetCompatibility = javaVersion
 plugins {
     application
     java
-    kotlin("jvm") version "1.6.10"
+    kotlin("jvm") version "1.6.20"
+    id("nu.studer.jooq") version "7.1.1"
+
 }
 
 repositories {
@@ -64,12 +68,12 @@ dependencies {
     implementation("com.google.apis:google-api-services-youtube:$googleYoutubeApiVersion")
 
     // database
+    jooqGenerator("org.xerial:sqlite-jdbc:$sqliteJdbcVersion")
+    // TODO tbp: add jooq-kotlin dependency if it's useful
+
     implementation("org.xerial:sqlite-jdbc:$sqliteJdbcVersion")
     implementation("com.zaxxer:HikariCP:$hikariCpVersion")
     implementation("org.flywaydb:flyway-core:$flywayVersion")
-    implementation("org.jooq:jooq:$jooqVersion")
-    implementation("org.jooq:jooq-meta:$jooqVersion")
-    implementation("org.jooq:jooq-codegen:$jooqVersion")
 
 
     implementation("com.sksamuel.hoplite:hoplite-core:$hopliteVersion")
@@ -112,6 +116,61 @@ tasks {
     }
 
     wrapper {
-        gradleVersion = "7.4"
+        gradleVersion = "7.4.2"
+    }
+}
+
+jooq {
+    version.set(jooqVersion)
+
+    configurations {
+        create("main") {
+            // omit task dependency from compileJava to generateJooq
+            generateSchemaSourceOnCompilation.set(false)
+            jooqConfiguration.apply {
+                logging = org.jooq.meta.jaxb.Logging.WARN
+                jdbc.apply {
+                    driver = "org.sqlite.JDBC"
+                    url = "jdbc:sqlite:zzzz.sqlite"
+                }
+                generator.apply {
+                    name = "org.jooq.codegen.KotlinGenerator"
+                    database.apply {
+                        name = "org.jooq.meta.sqlite.SQLiteDatabase"
+                        forcedTypes.add(ForcedType().apply {
+                            /*
+                            Transform Sqlite's INTEGER PRIMARY KEY AUTOINCREMENT columns to Long instead of Int in
+                                Jooq generated code.
+                            I name all my id columns as `[table_name]_id` (eg. select user.user_id from user),
+                                so I'm using a sql to return all those columns.
+                             */
+                            name = "BIGINT"
+
+                            //language=SQLite
+                            sql = """
+                                    WITH all_tables AS (SELECT name FROM sqlite_master WHERE type = 'table')
+                                    SELECT pti.name
+                                    FROM all_tables at INNER JOIN pragma_table_info(at.name) pti
+                                        WHERE lower(pti.name) = lower(at.name || '_id')
+                                """.trimIndent()
+                        })
+                    }
+                    generate.apply {
+                        isDeprecationOnUnknownTypes = true
+                        isDaos = true
+                        isJavaTimeTypes = true
+                        isDeprecated = false
+//                        isRecords = true
+//                        isImmutablePojos = false
+                        isFluentSetters = true
+                    }
+                    target.apply {
+                        packageName = "land.tbp.jooq"
+                        directory = "src/generated/jooq"
+                    }
+                    strategy.name = "org.jooq.codegen.DefaultGeneratorStrategy"
+                }
+            }
+        }
     }
 }
