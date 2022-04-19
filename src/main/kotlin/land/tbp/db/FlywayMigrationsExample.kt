@@ -1,4 +1,4 @@
-package land.tbp.land.tbp
+package land.tbp.db
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
@@ -13,13 +13,13 @@ val hikariDataSource = HikariDataSource(HikariConfig().apply {
     maxLifetime = 60000 // 60 Sec
     idleTimeout = 45000 // 45 Sec
     maximumPoolSize = 10
+    connectionInitSql = "PRAGMA reverse_unordered_selects=true;PRAGMA foreign_keys=true;"
 })
+
 
 
 fun main() {
     migrateDatabase()
-
-
 }
 
 fun migrateDatabase(): MigrateResult = Flyway.configure()

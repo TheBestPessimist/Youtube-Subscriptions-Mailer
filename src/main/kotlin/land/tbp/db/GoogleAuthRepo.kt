@@ -1,4 +1,4 @@
-package land.tbp.land.tbp
+package land.tbp.db
 
 import com.google.api.client.auth.oauth2.BearerToken
 import com.google.api.client.auth.oauth2.ClientParametersAuthentication
