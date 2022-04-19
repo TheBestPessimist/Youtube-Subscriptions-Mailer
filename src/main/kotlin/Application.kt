@@ -33,10 +33,10 @@ val config: Config = ConfigLoader.Builder()
 
 fun main() {
     System.setProperty("io.ktor.development", "true")
-
+    System.setProperty("org.jooq.no-logo", "true");
 
     val embeddedServer: NettyApplicationEngine = embeddedServer(Netty, 6969, watchPaths = listOf("classes", "resources")) {
-//        module()
+//        dummyModule()
         googleOAuth()
     }
 
@@ -47,7 +47,7 @@ fun main() {
 
 @Suppress("unused") // Referenced in application.conf
 @kotlin.jvm.JvmOverloads
-fun Application.module(testing: Boolean = false) {
+fun Application.dummyModule(testing: Boolean = false) {
     install(Compression) {
         gzip {
             priority = 1.0
