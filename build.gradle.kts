@@ -69,7 +69,7 @@ dependencies {
 
     // database
     jooqGenerator("org.xerial:sqlite-jdbc:$sqliteJdbcVersion")
-    // TODO tbp: add jooq-kotlin dependency if it's useful
+    implementation("org.jooq:jooq-kotlin:$jooqVersion")
 
     implementation("org.xerial:sqlite-jdbc:$sqliteJdbcVersion")
     implementation("com.zaxxer:HikariCP:$hikariCpVersion")
@@ -174,3 +174,5 @@ jooq {
         }
     }
 }
+
+tasks.named<nu.studer.gradle.jooq.JooqGenerate>("generateJooq") { allInputsDeclared.set(true) }
