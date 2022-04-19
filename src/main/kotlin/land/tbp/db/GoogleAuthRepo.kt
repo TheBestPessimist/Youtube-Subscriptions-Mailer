@@ -42,14 +42,14 @@ fun fdsa(): Unit {
         val youtube: YouTube = youtubeService.createForUser(credential)
 
         val listRequest: HttpRequest = youtube.subscriptions()
-            .list(listOf("snippet","contentDetails"))
+            .list(listOf("snippet", "contentDetails"))
             .setPrettyPrint(true)
             .setMine(true)
             .setFields("*")
             .buildHttpRequest()
 
         youtube.batch()
-            .queue(listRequest, SubscriptionListResponse::class.java, GoogleJsonErrorContainer::class.java,object : JsonBatchCallback<SubscriptionListResponse>() {
+            .queue(listRequest, SubscriptionListResponse::class.java, GoogleJsonErrorContainer::class.java, object : JsonBatchCallback<SubscriptionListResponse>() {
                 override fun onSuccess(s: SubscriptionListResponse, responseHeaders: HttpHeaders?) {
                     println(s)
                     println(s.pageInfo.totalResults)
