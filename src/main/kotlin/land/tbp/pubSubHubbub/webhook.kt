@@ -12,12 +12,15 @@ import io.ktor.response.*
 import io.ktor.routing.*
 import io.ktor.util.*
 import kotlinx.coroutines.runBlocking
+import land.tbp.land.tbp.util.logger
 import java.time.Duration
 
 
 val path = "/pshb-webhook"
 
+
 fun Routing.installPubSubHubbubRoutes() {
+    val log = logger()
 
 //        hub.mode =
 //            [subscribe], hub.topic = [https://superfeedr-blog-feed.herokuapp.com/], hub.challenge=[0yrw79js7wyjj7b3ayvi], hub.lease_seconds=[1296000]}

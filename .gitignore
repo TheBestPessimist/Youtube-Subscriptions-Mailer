@@ -172,3 +172,9 @@ gradle-app.setting
 /.idea/vcs.xml
 /.idea/modules/
 /.idea/libraries-with-intellij-classes.xml
+/config/private/
+/.env
+/.idea/GitLinkConfig.xml
+/.idea/markdown.xml
+/src/generated/jooq/land/tbp/jooq/
+/*.sqlite
