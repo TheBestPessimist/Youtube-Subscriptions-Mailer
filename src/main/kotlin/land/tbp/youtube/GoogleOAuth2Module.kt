@@ -3,17 +3,19 @@ package land.tbp.land.tbp.youtube
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.PropertyNamingStrategies
-import io.ktor.application.*
-import io.ktor.auth.*
 import io.ktor.client.*
+import io.ktor.client.call.*
 import io.ktor.client.engine.apache.*
-import io.ktor.client.features.json.*
-import io.ktor.client.features.logging.*
+import io.ktor.client.plugins.contentnegotiation.*
+import io.ktor.client.plugins.logging.*
 import io.ktor.client.request.*
 import io.ktor.http.*
-import io.ktor.response.*
-import io.ktor.routing.*
-import io.ktor.sessions.*
+import io.ktor.serialization.jackson.*
+import io.ktor.server.application.*
+import io.ktor.server.auth.*
+import io.ktor.server.response.*
+import io.ktor.server.routing.*
+import io.ktor.server.sessions.*
 import land.tbp.AUTH_SCOPES
 import land.tbp.config
 import land.tbp.db.GoogleAuthRepo
@@ -28,8 +30,8 @@ http://localhost:6969/login
  */
 fun Application.googleOAuth() {
     val googleHttpClient = HttpClient(Apache) {
-        install(JsonFeature) {
-            serializer = JacksonSerializer() {
+        install(ContentNegotiation) {
+            jackson {
                 disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
                 propertyNamingStrategy = PropertyNamingStrategies.SNAKE_CASE
             }
@@ -59,7 +61,7 @@ fun Application.googleOAuth() {
                     authorizeUrlInterceptor = {
                         /*
                         Technical:
-                        `access_type=offline` is mandatory to receive the refresh_token from google.
+                        `access_type=offline` is mandatory to receive the refresh_token from Google.
                         Workaround for https://youtrack.jetbrains.com/issue/KTOR-2128
                          */
                         this.parameters["access_type"] = "offline"
@@ -84,7 +86,7 @@ fun Application.googleOAuth() {
             get("/callback") {
                 val principal: OAuthAccessTokenResponse.OAuth2 = call.principal()!!
                 principal.refreshToken!! //<- this must not be null!
-                log.info(principal.toString())
+                call.application.log.info(principal.toString())
 
                 call.sessions.set(UserCookie(principal.accessToken))
                 GoogleAuthRepo.persistTokenResponse(principal)
@@ -101,11 +103,11 @@ fun Application.googleOAuth() {
             // todo login is finished here. Now we're left to persist the user, its email and the auth token
 
             val cookie = call.sessions.get<UserCookie>()!!
-            val userInfo = googleHttpClient.get<GoogleUserInfo>("https://www.googleapis.com/oauth2/v2/userinfo") {
+            val userInfo = googleHttpClient.get("https://www.googleapis.com/oauth2/v2/userinfo") {
                 headers {
                     append(HttpHeaders.Authorization, "Bearer ${cookie.token}")
                 }
-            }
+            }.body<GoogleUserInfo>()
 
             call.respond(userInfo.toString())
         }
@@ -115,11 +117,11 @@ fun Application.googleOAuth() {
 }
 
 suspend fun saveUserAndAuthToken(principal: OAuthAccessTokenResponse.OAuth2, googleHttpClient: HttpClient) {
-    val userInfo = googleHttpClient.get<GoogleUserInfo>("https://www.googleapis.com/oauth2/v2/userinfo") {
+    val userInfo = googleHttpClient.get("https://www.googleapis.com/oauth2/v2/userinfo") {
         headers {
             append(HttpHeaders.Authorization, "Bearer ${principal.accessToken}")
         }
-    }
+    }.body<GoogleUserInfo>()
 
     val userRecord = UserRepository().upsert(userInfo)
     OAuth2TokenRepository().upsert(principal, userRecord.userId!!)

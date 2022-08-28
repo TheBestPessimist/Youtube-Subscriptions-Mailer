@@ -1,6 +1,6 @@
 package land.tbp.land.tbp.db
 
-import io.ktor.auth.*
+import io.ktor.server.auth.*
 import land.tbp.db.hikariDataSource
 import land.tbp.jooq.tables.daos.Oauth2tokenDao
 import land.tbp.jooq.tables.references.OAUTH2TOKEN

@@ -4,30 +4,31 @@ import com.fasterxml.jackson.databind.SerializationFeature
 import com.google.api.services.youtube.YouTubeScopes
 import com.sksamuel.hoplite.ConfigLoader
 import com.sksamuel.hoplite.parsers.PropsParser
-import io.ktor.application.*
 import io.ktor.client.*
 import io.ktor.client.engine.apache.*
-import io.ktor.client.features.*
-import io.ktor.client.features.logging.*
-import io.ktor.features.*
+import io.ktor.client.plugins.*
+import io.ktor.client.plugins.logging.*
 import io.ktor.http.*
-import io.ktor.jackson.*
-import io.ktor.response.*
-import io.ktor.routing.*
+import io.ktor.serialization.jackson.*
+import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
+import io.ktor.server.plugins.autohead.*
+import io.ktor.server.plugins.callloging.*
+import io.ktor.server.plugins.contentnegotiation.*
+import io.ktor.server.response.*
+import io.ktor.server.routing.*
 import land.tbp.land.tbp.config.Config
 import land.tbp.land.tbp.youtube.googleOAuth
 import org.slf4j.event.Level
-import java.io.File
 
 val AUTH_SCOPES = mutableListOf(YouTubeScopes.YOUTUBE_READONLY, "https://www.googleapis.com/auth/userinfo.email")
 
-val config: Config = ConfigLoader.Builder()
+val config: Config = ConfigLoader.builder()
     .addFileExtensionMapping("env", PropsParser())
     .build()
     .loadConfigOrThrow(
-        File("""C:/work/Youtube Subscriptions Mailer/.env"""),
+        """C:/work/Youtube Subscriptions Mailer/.env""",
     )
 
 
@@ -35,12 +36,13 @@ fun main() {
     System.setProperty("io.ktor.development", "true")
     System.setProperty("org.jooq.no-logo", "true");
 
-    val embeddedServer: NettyApplicationEngine = embeddedServer(Netty, 6969, watchPaths = listOf("classes", "resources")) {
+    val embeddedServer: NettyApplicationEngine =
+        embeddedServer(Netty, 6969, watchPaths = listOf("classes", "resources")) {
 //        dummyModule()
-        googleOAuth()
-    }
+            googleOAuth()
+        }
 
-    embeddedServer.start(false)
+    embeddedServer.start(true)
 
 //    subscribble()
 }
@@ -48,15 +50,15 @@ fun main() {
 @Suppress("unused") // Referenced in application.conf
 @kotlin.jvm.JvmOverloads
 fun Application.dummyModule(testing: Boolean = false) {
-    install(Compression) {
-        gzip {
-            priority = 1.0
-        }
-        deflate {
-            priority = 10.0
-            minimumSize(1024) // condition
-        }
-    }
+//    install(Compression) {
+//        gzip {
+//            priority = 1.0
+//        }
+//        deflate {
+//            priority = 10.0
+//            minimumSize(1024) // condition
+//        }
+//    }
 
     install(AutoHeadResponse)
 
@@ -65,9 +67,9 @@ fun Application.dummyModule(testing: Boolean = false) {
 //        filter { call -> call.request.path().startsWith("/") }
     }
 
-    install(DefaultHeaders) {
-        header("X-Engine", "Ktor") // will send this header with each response
-    }
+//    install(DefaultHeaders) {
+//        header(HttpHeaders.Server, "Ktor") // will send this header with each response
+//    }
 
     install(ContentNegotiation) {
         jackson {

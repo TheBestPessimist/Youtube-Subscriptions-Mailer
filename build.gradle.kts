@@ -1,21 +1,22 @@
 import org.jooq.meta.jaxb.ForcedType
 
-val javaVersion = JavaVersion.VERSION_16
-val kotlinLanguageVersion = "1.6"
-val coroutinesVersion = "1.6.0"
-val ktorVersion = "1.6.7"
-val logbackVersion = "1.2.10"
-val jacksonVersion = "2.13.1"
-val junitVersion = "5.8.2"
-val assertJVersion = "3.22.0"
-val googleApiClientVersion = "1.33.2"
-val googleOauthClientVersion = "1.33.1"
-val googleYoutubeApiVersion = "v3-rev20210915-1.32.1"
-val hopliteVersion = "1.4.16"
-val sqliteJdbcVersion = "3.36.0.3"
-val hikariCpVersion = "5.0.1"
-val flywayVersion = "8.5.0"
-val jooqVersion = "3.16.4"
+val javaVersion = JavaVersion.VERSION_18
+val kotlinLanguageVersion = "1.7"
+val coroutines = "1.6.4"
+val ktor = "2.1.0"
+val ktor_version = ktor
+val logback = "1.2.11"
+val jackson = "2.13.3"
+val junit = "5.9.0"
+val assertJ = "3.23.1"
+val googleApiClient = "1.33.2"
+val googleOauthClient = "1.33.1"
+val googleYoutubeApi = "v3-rev20210915-1.32.1"
+val hoplite = "2.5.2"
+val sqliteJdbc = "3.39.2.0"
+val hikariCp = "5.0.1"
+val flyway = "9.1.6"
+val jooq = "3.17.3"
 
 group = "land.tbp"
 version = "0.0.1"
@@ -26,9 +27,8 @@ java.targetCompatibility = javaVersion
 plugins {
     application
     java
-    kotlin("jvm") version "1.6.20"
+    kotlin("jvm") version "1.7.10"
     id("nu.studer.jooq") version "7.1.1"
-
 }
 
 repositories {
@@ -37,56 +37,64 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines")
 
-    implementation("ch.qos.logback:logback-classic:$logbackVersion")
+    implementation("ch.qos.logback:logback-classic:$logback")
 
     // ktor server
-    implementation("io.ktor:ktor-server-core:$ktorVersion")
-    implementation("io.ktor:ktor-server-netty:$ktorVersion")
-    implementation("io.ktor:ktor-jackson:$ktorVersion")
-    implementation("io.ktor:ktor-auth:$ktorVersion")
+    implementation("io.ktor:ktor-server-core:$ktor")
+    implementation("io.ktor:ktor-server-netty:$ktor")
+
+    implementation("io.ktor:ktor-server-content-negotiation:$ktor")
+    implementation("io.ktor:ktor-serialization-jackson:$ktor")
+    implementation("io.ktor:ktor-server-auth:$ktor")
+    implementation("io.ktor:ktor-server-call-logging:$ktor")
+    implementation("io.ktor:ktor-server-auto-head-response:$ktor")
+    implementation("io.ktor:ktor-server-default-headers:$ktor")
 
     // ktor client
-    implementation("io.ktor:ktor-client-apache:$ktorVersion")
-    implementation("io.ktor:ktor-client-logging-jvm:$ktorVersion")
-    implementation("io.ktor:ktor-client-jackson:$ktorVersion")
-    implementation("io.ktor:ktor-auth:$ktorVersion")
-
+    implementation("io.ktor:ktor-client-core:$ktor_version")
+    implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
+    implementation("io.ktor:ktor-serialization-jackson:$ktor_version")
+    implementation("io.ktor:ktor-client-apache:$ktor")
+    implementation("io.ktor:ktor-client-logging-jvm:$ktor")
+//    implementation("io.ktor:ktor-client-auth:$ktor_version")
 
     // jackson
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
-    implementation("com.fasterxml.jackson.module:jackson-module-parameter-names:$jacksonVersion")
-    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jacksonVersion")
-    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion")
-    implementation("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jackson")
+    implementation("com.fasterxml.jackson.module:jackson-module-parameter-names:$jackson")
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jackson")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jackson")
+    implementation("com.fasterxml.jackson.core:jackson-annotations:$jackson")
 
 
     // google
-    implementation("com.google.api-client:google-api-client:$googleApiClientVersion")
-    implementation("com.google.oauth-client:google-oauth-client-jetty:$googleOauthClientVersion")
-    implementation("com.google.apis:google-api-services-youtube:$googleYoutubeApiVersion")
+    implementation("com.google.api-client:google-api-client:$googleApiClient")
+    implementation("com.google.oauth-client:google-oauth-client-jetty:$googleOauthClient")
+    implementation("com.google.apis:google-api-services-youtube:$googleYoutubeApi")
 
     // database
-    jooqGenerator("org.xerial:sqlite-jdbc:$sqliteJdbcVersion")
-    implementation("org.jooq:jooq-kotlin:$jooqVersion")
+    jooqGenerator("org.xerial:sqlite-jdbc:$sqliteJdbc")
+    implementation("org.jooq:jooq-kotlin:$jooq")
 
-    implementation("org.xerial:sqlite-jdbc:$sqliteJdbcVersion")
-    implementation("com.zaxxer:HikariCP:$hikariCpVersion")
-    implementation("org.flywaydb:flyway-core:$flywayVersion")
+    implementation("org.xerial:sqlite-jdbc:$sqliteJdbc")
+    implementation("com.zaxxer:HikariCP:$hikariCp")
+    implementation("org.flywaydb:flyway-core:$flyway")
 
 
-    implementation("com.sksamuel.hoplite:hoplite-core:$hopliteVersion")
+    implementation("com.sksamuel.hoplite:hoplite-core:$hoplite")
 
     // test
-    testImplementation("org.junit.jupiter:junit-jupiter:$junitVersion")
-    testImplementation("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
+    testImplementation("org.junit.jupiter:junit-jupiter:$junit")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:$junit")
 
-    testImplementation("org.assertj:assertj-core:$assertJVersion")
+    testImplementation("org.assertj:assertj-core:$assertJ")
 
-    testImplementation("io.ktor:ktor-server-test-host:$ktorVersion")
+    testImplementation("io.ktor:ktor-server-test-host:$ktor")
     //    testImplementation("io.ktor:ktor-client-mock:$ktorVersion")
 //    testImplementation("io.ktor:ktor-client-mock-jvm:$ktorVersion")
+//    testImplementation("io.ktor:ktor-server-test-host:$ktor_version")
+//    testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
 
 
     configurations.all {
@@ -116,12 +124,12 @@ tasks {
     }
 
     wrapper {
-        gradleVersion = "7.4.2"
+        gradleVersion = "7.5.1"
     }
 }
 
 jooq {
-    version.set(jooqVersion)
+    version.set(jooq)
 
     configurations {
         create("main") {
