@@ -2,8 +2,8 @@ package land.tbp.land.tbp.db
 
 import io.ktor.server.auth.*
 import land.tbp.db.hikariDataSource
+import land.tbp.jooq.tables.Oauth2token.Companion.OAUTH2TOKEN
 import land.tbp.jooq.tables.daos.Oauth2tokenDao
-import land.tbp.jooq.tables.references.OAUTH2TOKEN
 import land.tbp.land.tbp.util.logger
 import org.jooq.DSLContext
 import org.jooq.SQLDialect
@@ -24,16 +24,20 @@ class OAuth2TokenRepository {
 
     fun upsert(principal: OAuthAccessTokenResponse.OAuth2, userId: Long) {
         log.info("upsert $principal for user $userId")
-        dslContext.deleteFrom(OAUTH2TOKEN).where(OAUTH2TOKEN.USER_ID.eq(userId)).execute()
+        dslContext.transaction { trx ->
+            trx.dsl().deleteFrom(OAUTH2TOKEN).where(OAUTH2TOKEN.USER_ID.eq(userId)).execute()
 
-        val newRecord = dslContext.newRecord(OAUTH2TOKEN, principal)
-        newRecord.expiresinseconds = principal.expiresIn
-        newRecord.scope = principal.extraParameters["scope"]
-        newRecord.userId = userId
-        newRecord.dbg()
-        newRecord.store()
-        oauth2Dao.findAll().dbg()
+            val newRecord = trx.dsl().newRecord(OAUTH2TOKEN, principal).apply {
+                expiresinseconds = principal.expiresIn
+                scope = principal.extraParameters["scope"]
+                this.userId = userId
+                dbg()
+                store()
+            }
+            oauth2Dao.findAll().dbg()
+        }
     }
+
 }
 
 data class OAuth2Token(
