@@ -24,6 +24,8 @@ import land.tbp.land.tbp.db.UserRepository
 
 //import land.tbp.land.tbp.db.UserRepository
 
+private const val AUTHENTICATION_PROVIDER_NAME_GOOGLE = "GoogleOAuth"
+
 /*
 http://localhost:6969/login
 
@@ -47,7 +49,7 @@ fun Application.googleOAuth() {
 //    }
 
     install(Authentication) {
-        oauth("GoogleOAuth") {
+        oauth(AUTHENTICATION_PROVIDER_NAME_GOOGLE) {
             urlProvider = { "http://localhost:6969/callback" } // todo how not to hardcode?
             providerLookup = {
                 OAuthServerSettings.OAuth2ServerSettings(
@@ -78,7 +80,7 @@ fun Application.googleOAuth() {
     }
 
     routing {
-        authenticate("GoogleOAuth") {
+        authenticate(AUTHENTICATION_PROVIDER_NAME_GOOGLE) {
             get("/login") {
                 // Redirects to 'authorizeUrl' automatically
             }
@@ -124,7 +126,7 @@ suspend fun saveUserAndAuthToken(principal: OAuthAccessTokenResponse.OAuth2, goo
     }.body<GoogleUserInfo>()
 
     val userRecord = UserRepository().upsert(userInfo)
-    OAuth2TokenRepository().upsert(principal, userRecord.userId!!)
+    OAuth2TokenRepository().upsert(principal, userRecord.userId!!) // todo autowire the repo
 }
 
 data class UserCookie(val token: String)
