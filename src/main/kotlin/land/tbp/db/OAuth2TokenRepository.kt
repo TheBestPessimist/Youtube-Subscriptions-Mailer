@@ -27,12 +27,13 @@ class OAuth2TokenRepository {
         dslContext.transaction { trx ->
             trx.dsl().deleteFrom(OAUTH2TOKEN).where(OAUTH2TOKEN.USER_ID.eq(userId)).execute()
 
-            val newRecord = trx.dsl().newRecord(OAUTH2TOKEN, principal)
-            newRecord.expiresinseconds = principal.expiresIn
-            newRecord.scope = principal.extraParameters["scope"]
-            newRecord.userId = userId
-            newRecord.dbg()
-            newRecord.store()
+            val newRecord = trx.dsl().newRecord(OAUTH2TOKEN, principal).apply {
+                expiresinseconds = principal.expiresIn
+                scope = principal.extraParameters["scope"]
+                this.userId = userId
+                dbg()
+                store()
+            }
             oauth2Dao.findAll().dbg()
         }
     }
