@@ -2,6 +2,7 @@ import org.jooq.meta.jaxb.ForcedType
 
 val javaVersion = JavaVersion.VERSION_18
 val kotlinLanguageVersion = "1.7"
+val gradle = "7.5.1"
 val kotlin = "1.7.20"
 val coroutines = "1.6.4"
 val ktor = "2.1.2"
@@ -53,6 +54,7 @@ dependencies {
     implementation("io.ktor:ktor-server-call-logging:$ktor")
     implementation("io.ktor:ktor-server-auto-head-response:$ktor")
     implementation("io.ktor:ktor-server-default-headers:$ktor")
+    implementation("io.ktor:ktor-server-html-builder:$ktor_version")
 
     // ktor client
     implementation("io.ktor:ktor-client-core:$ktor_version")
@@ -60,7 +62,7 @@ dependencies {
     implementation("io.ktor:ktor-serialization-jackson:$ktor_version")
     implementation("io.ktor:ktor-client-apache:$ktor")
     implementation("io.ktor:ktor-client-logging-jvm:$ktor")
-//    implementation("io.ktor:ktor-client-auth:$ktor_version")
+    implementation("io.ktor:ktor-client-auth:$ktor_version")
 
     // jackson
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jackson")
@@ -126,7 +128,7 @@ tasks {
     }
 
     wrapper {
-        gradleVersion = "7.5.1"
+        gradleVersion = gradle
     }
 }
 
