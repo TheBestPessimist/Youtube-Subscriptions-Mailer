@@ -12,14 +12,18 @@ import io.ktor.http.*
 import io.ktor.serialization.jackson.*
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
+import io.ktor.server.html.*
 import io.ktor.server.netty.*
 import io.ktor.server.plugins.autohead.*
 import io.ktor.server.plugins.callloging.*
 import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
+import io.ktor.server.sessions.*
+import kotlinx.html.*
 import land.tbp.land.tbp.config.Config
-import land.tbp.land.tbp.youtube.googleOAuth
+import land.tbp.land.tbp.youtube.UserCookie
+import land.tbp.land.tbp.youtube.googleOAuthModule
 import org.slf4j.event.Level
 
 val AUTH_SCOPES = mutableListOf(YouTubeScopes.YOUTUBE_READONLY, "https://www.googleapis.com/auth/userinfo.email")
@@ -39,12 +43,42 @@ fun main() {
     val embeddedServer: NettyApplicationEngine =
         embeddedServer(Netty, 6969, watchPaths = listOf("classes", "resources")) {
 //        dummyModule()
-            googleOAuth()
+            googleOAuthModule()
+            homePageModule()
         }
 
     embeddedServer.start(true)
 
 //    subscribble()
+}
+
+fun Application.homePageModule() {
+    routing {
+        get("/") {
+            call.respondHtml {
+                head {
+                    title("Head.Title.YoutubeMailer")
+//                    { below is an alternative to the above
+//                        "Head.Title".unaryPlus()
+//                    }
+                }
+                body {
+                    h1 { +"Body.H1." }
+                    p { +"Sample text" }
+
+                    p { a("/login") { +"/login endpoint" } }
+                    p { a("/callback") { +"/callback endpoint" } }
+                }
+            }
+        }
+
+        get("/do-i-have-a-cookie-here") {
+            val cookie = call.sessions.get<UserCookie>()!!
+            call.respondHtml {
+
+            }
+        }
+    }
 }
 
 @Suppress("unused") // Referenced in application.conf

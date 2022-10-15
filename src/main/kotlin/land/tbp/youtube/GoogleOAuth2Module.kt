@@ -6,6 +6,8 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategies
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.engine.apache.*
+import io.ktor.client.plugins.auth.*
+import io.ktor.client.plugins.auth.providers.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.plugins.logging.*
 import io.ktor.client.request.*
@@ -30,7 +32,7 @@ private const val AUTHENTICATION_PROVIDER_NAME_GOOGLE = "GoogleOAuth"
 http://localhost:6969/login
 
  */
-fun Application.googleOAuth() {
+fun Application.googleOAuthModule() {
     val googleHttpClient = HttpClient(Apache) {
         install(ContentNegotiation) {
             jackson {
@@ -50,7 +52,16 @@ fun Application.googleOAuth() {
 
     install(Authentication) {
         oauth(AUTHENTICATION_PROVIDER_NAME_GOOGLE) {
-            urlProvider = { "http://localhost:6969/callback" } // todo how not to hardcode?
+            urlProvider = {
+                /*
+               todo how not to hardcode?
+                reading the Ktor documentation, this can and should be hardcoded. then, how do i redirect to the page the user accessed initially (ie. when the user was not authenticated)?
+                In the google credentials "Authorized redirect URIs", i must set a full URI (https://my.website/callback-page) as well.
+                All in all, this still needs some more research.
+                 */
+                "http://localhost:6969/callback"
+            }
+            client = googleHttpClient
             providerLookup = {
                 OAuthServerSettings.OAuth2ServerSettings(
                     name = "google",
@@ -60,18 +71,10 @@ fun Application.googleOAuth() {
                     clientId = config.googleCredentials.clientId,
                     clientSecret = config.googleCredentials.clientSecret,
                     defaultScopes = listOf("https://www.googleapis.com/auth/userinfo.profile") + AUTH_SCOPES,
-                    authorizeUrlInterceptor = {
-                        /*
-                        Technical:
-                        `access_type=offline` is mandatory to receive the refresh_token from Google.
-                        Workaround for https://youtrack.jetbrains.com/issue/KTOR-2128
-                         */
-                        this.parameters["access_type"] = "offline"
-                    },
+                    extraAuthParameters = listOf("access_type" to "offline"),
 //                    nonceManager = StatelessHmacNonceManager("1".toByteArray()) // todo: is this safe since "1" is hardcoded? no idea.
                 )
             }
-            client = googleHttpClient
         }
     }
 
@@ -89,6 +92,8 @@ fun Application.googleOAuth() {
                 val principal: OAuthAccessTokenResponse.OAuth2 = call.principal()!!
                 principal.refreshToken!! //<- this must not be null!
                 call.application.log.info(principal.toString())
+
+//                application.log.info("fdsa")
 
                 call.sessions.set(UserCookie(principal.accessToken))
                 GoogleAuthRepo.persistTokenResponse(principal)
@@ -137,4 +142,12 @@ data class GoogleUserInfo(
     val email: String,
     val name: String,
     val picture: String?,
+)
+
+data class ErrorInfo(val error: ErrorDetails)
+
+data class ErrorDetails(
+    val code: Int,
+    val message: String,
+    val status: String,
 )
