@@ -178,3 +178,6 @@ gradle-app.setting
 /.idea/markdown.xml
 /src/generated/jooq/land/tbp/jooq/
 /*.sqlite
+/.idea/kotlinc.xml
+/zzzz.sqlite-shm
+/zzzz.sqlite-wal
