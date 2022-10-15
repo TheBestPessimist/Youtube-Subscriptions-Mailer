@@ -2,21 +2,22 @@ import org.jooq.meta.jaxb.ForcedType
 
 val javaVersion = JavaVersion.VERSION_18
 val kotlinLanguageVersion = "1.7"
+val kotlin = "1.7.20"
 val coroutines = "1.6.4"
-val ktor = "2.1.0"
-val ktor_version = ktor
-val logback = "1.2.11"
-val jackson = "2.13.3"
+val ktor = "2.1.2"
+@Suppress("PropertyName") val ktor_version = ktor
+val logback = "1.4.3"
+val jackson = "2.13.4"
 val junit = "5.9.0"
 val assertJ = "3.23.1"
 val googleApiClient = "1.33.2"
 val googleOauthClient = "1.33.1"
 val googleYoutubeApi = "v3-rev20210915-1.32.1"
-val hoplite = "2.5.2"
-val sqliteJdbc = "3.39.2.0"
+val hoplite = "2.6.4"
+val sqliteJdbc = "3.39.3.0"
 val hikariCp = "5.0.1"
-val flyway = "9.1.6"
-val jooq = "3.17.3"
+val flyway = "9.4.0"
+val jooq = "3.17.4"
 
 group = "land.tbp"
 version = "0.0.1"
@@ -27,16 +28,17 @@ java.targetCompatibility = javaVersion
 plugins {
     application
     java
-    kotlin("jvm") version "1.7.10"
+    kotlin("jvm") version "1.7.20"
     id("nu.studer.jooq") version "7.1.1"
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines")
 
     implementation("ch.qos.logback:logback-classic:$logback")
