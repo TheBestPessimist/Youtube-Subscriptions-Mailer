@@ -1,16 +1,12 @@
 package land.tbp.land.tbp.db
 
 import io.ktor.server.auth.*
-import land.tbp.db.hikariDataSource
 import land.tbp.jooq.tables.Oauth2token.Companion.OAUTH2TOKEN
 import land.tbp.jooq.tables.daos.Oauth2tokenDao
+import land.tbp.land.tbp.util.dbg
 import land.tbp.land.tbp.util.logger
-import org.jooq.DSLContext
-import org.jooq.SQLDialect
-import org.jooq.impl.DSL
 import java.time.Instant
 
-val dslContext: DSLContext = DSL.using(hikariDataSource, SQLDialect.SQLITE)
 
 class OAuth2TokenRepository {
 
@@ -51,5 +47,3 @@ data class OAuth2Token(
 
 // TODO tbp: implement snowflake id because it sounds interesting
 fun nextId(): Long = Instant.now().toEpochMilli()
-
-fun <T : Any> T.dbg() = this.also { println(">${it::class}<\n$it") }

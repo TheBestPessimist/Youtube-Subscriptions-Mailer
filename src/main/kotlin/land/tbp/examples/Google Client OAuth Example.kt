@@ -1,4 +1,4 @@
-package land.tbp.land.tbp.google.oauth
+package land.tbp.land.tbp.examples
 
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.PropertyNamingStrategies
@@ -15,7 +15,7 @@ import io.ktor.client.statement.*
 import io.ktor.http.*
 import io.ktor.serialization.jackson.*
 import io.ktor.server.auth.*
-import land.tbp.config
+import land.tbp.land.tbp.config.config
 import land.tbp.land.tbp.youtube.ErrorInfo
 import land.tbp.land.tbp.youtube.GoogleUserInfo
 
@@ -27,7 +27,7 @@ suspend fun main() {
 
     val bearerTokenStorage = mutableListOf(
         BearerTokens(
-            "",""
+            "", "" // when trying this, please get the access token and refresh token beforehand
         )
     )
 

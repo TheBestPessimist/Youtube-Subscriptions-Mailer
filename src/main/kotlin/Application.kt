@@ -1,9 +1,6 @@
 package land.tbp
 
 import com.fasterxml.jackson.databind.SerializationFeature
-import com.google.api.services.youtube.YouTubeScopes
-import com.sksamuel.hoplite.ConfigLoader
-import com.sksamuel.hoplite.parsers.PropsParser
 import io.ktor.client.*
 import io.ktor.client.engine.apache.*
 import io.ktor.client.plugins.*
@@ -21,19 +18,11 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import io.ktor.server.sessions.*
 import kotlinx.html.*
-import land.tbp.land.tbp.config.Config
 import land.tbp.land.tbp.youtube.UserCookie
-import land.tbp.land.tbp.youtube.googleOAuthModule
+import land.tbp.land.tbp.youtube.googleOAuth2Module
 import org.slf4j.event.Level
 
-val AUTH_SCOPES = mutableListOf(YouTubeScopes.YOUTUBE_READONLY, "https://www.googleapis.com/auth/userinfo.email")
 
-val config: Config = ConfigLoader.builder()
-    .addFileExtensionMapping("env", PropsParser())
-    .build()
-    .loadConfigOrThrow(
-        """C:/work/Youtube Subscriptions Mailer/.env""",
-    )
 
 
 fun main() {
@@ -43,7 +32,7 @@ fun main() {
     val embeddedServer: NettyApplicationEngine =
         embeddedServer(Netty, 6969, watchPaths = listOf("classes", "resources")) {
 //        dummyModule()
-            googleOAuthModule()
+            googleOAuth2Module()
             homePageModule()
         }
 
