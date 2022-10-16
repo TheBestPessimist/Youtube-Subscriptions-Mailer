@@ -6,14 +6,15 @@ val gradle = "7.5.1"
 val kotlin = "1.7.20"
 val coroutines = "1.6.4"
 val ktor = "2.1.2"
-@Suppress("PropertyName") val ktor_version = ktor
+@Suppress("PropertyName")
+val ktor_version = ktor
 val logback = "1.4.3"
 val jackson = "2.13.4"
 val junit = "5.9.0"
 val assertJ = "3.23.1"
 val googleApiClient = "1.33.2"
 val googleOauthClient = "1.33.1"
-val googleYoutubeApi = "v3-rev20210915-1.32.1"
+val googleYoutubeApi = "v3-rev20220926-2.0.0"
 val hoplite = "2.6.4"
 val sqliteJdbc = "3.39.3.0"
 val hikariCp = "5.0.1"
@@ -73,9 +74,10 @@ dependencies {
 
 
     // google
-    implementation("com.google.api-client:google-api-client:$googleApiClient")
-    implementation("com.google.oauth-client:google-oauth-client-jetty:$googleOauthClient")
+//    implementation("com.google.api-client:google-api-client:$googleApiClient")
+//    implementation("com.google.oauth-client:google-oauth-client-jetty:$googleOauthClient")
     implementation("com.google.apis:google-api-services-youtube:$googleYoutubeApi")
+    implementation("com.google.auth:google-auth-library-oauth2-http:1.11.0")
 
     // database
     jooqGenerator("org.xerial:sqlite-jdbc:$sqliteJdbc")
@@ -166,6 +168,13 @@ jooq {
                                         WHERE lower(pti.name) = lower(at.name || '_id')
                                 """.trimIndent()
                         })
+                        forcedTypes.add(ForcedType().apply {
+                            // name is the java type that i want, according to the mapping in `org.jooq.impl.SQLDataType`
+                            name = "BIGINT"
+                            // includeTypes is a regex capturing all the different types from the database which should be forced into my desired type above. Afais it's case insensitive by default
+                            includeTypes="int|integer"
+                        })
+
                     }
                     generate.apply {
                         isDeprecationOnUnknownTypes = true
