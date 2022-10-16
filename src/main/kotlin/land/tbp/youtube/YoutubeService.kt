@@ -1,28 +1,19 @@
 package land.tbp.land.tbp.youtube
 
-import com.google.api.client.auth.oauth2.Credential
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport
-import com.google.api.client.googleapis.util.Utils
-import com.google.api.client.http.javanet.NetHttpTransport
-import com.google.api.client.json.JsonFactory
 import com.google.api.client.json.gson.GsonFactory
 import com.google.api.services.youtube.YouTube
 import com.google.auth.http.HttpCredentialsAdapter
 import com.google.auth.oauth2.UserCredentials
-import land.tbp.config
+import land.tbp.land.tbp.config.config
 import land.tbp.land.tbp.db.UserRepository
 
 private const val APPLICATION_NAME = "API code samples"
 
+// TODO 1 add stuff here
+// TODO 2 tbp: add some tests using MockTokenServerTransport for the various auth problems which might occur
+class YoutubeService() {
 
-class YoutubeService(private val httpTransport: NetHttpTransport) {
-    private val JSON_FACTORY: JsonFactory = Utils.getDefaultJsonFactory()
-
-    fun createForUser(credential: Credential): YouTube {
-        return YouTube.Builder(httpTransport, JSON_FACTORY, credential)
-            .setApplicationName(APPLICATION_NAME)
-            .build()
-    }
 }
 
 
@@ -47,7 +38,7 @@ fun main() {
 //    println(userCredentials.refreshAccessToken())
 
     val request = y.subscriptions()
-        .list(listOf("snippet","contentDetails"))
+        .list(listOf("snippet", "contentDetails"))
         .setMine(true)
         .setFields("*")
         .setPrettyPrint(true)

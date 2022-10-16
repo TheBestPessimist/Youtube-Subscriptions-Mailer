@@ -1,4 +1,4 @@
-package land.tbp.land.tbp.google.oauth
+package land.tbp.land.tbp.examples
 
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.PropertyNamingStrategies
@@ -27,7 +27,7 @@ suspend fun main() {
 
     val bearerTokenStorage = mutableListOf(
         BearerTokens(
-            "", ""
+            "", "" // when trying this, please get the access token and refresh token beforehand
         )
     )
 

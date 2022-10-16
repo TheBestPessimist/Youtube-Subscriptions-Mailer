@@ -3,6 +3,7 @@ package land.tbp.land.tbp.youtube
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.PropertyNamingStrategies
+import com.google.api.services.youtube.YouTubeScopes
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.engine.apache.*
@@ -18,9 +19,7 @@ import io.ktor.server.auth.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import io.ktor.server.sessions.*
-import land.tbp.AUTH_SCOPES
-import land.tbp.config
-import land.tbp.db.GoogleAuthRepo
+import land.tbp.land.tbp.config.config
 import land.tbp.land.tbp.db.OAuth2TokenRepository
 import land.tbp.land.tbp.db.UserRepository
 
@@ -28,11 +27,15 @@ import land.tbp.land.tbp.db.UserRepository
 
 private const val AUTHENTICATION_PROVIDER_NAME_GOOGLE = "GoogleOAuth"
 
+@Suppress("PrivatePropertyName")
+private val AUTH_SCOPES = listOf(YouTubeScopes.YOUTUBE_READONLY, "https://www.googleapis.com/auth/userinfo.email")
+
+
 /*
 http://localhost:6969/login
 
  */
-fun Application.googleOAuthModule() {
+fun Application.googleOAuth2Module() {
     val googleHttpClient = HttpClient(Apache) {
         install(ContentNegotiation) {
             jackson {
@@ -96,7 +99,6 @@ fun Application.googleOAuthModule() {
 //                application.log.info("fdsa")
 
                 call.sessions.set(UserCookie(principal.accessToken))
-                GoogleAuthRepo.persistTokenResponse(principal)
 
                 saveUserAndAuthToken(principal, googleHttpClient)
 
