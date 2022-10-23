@@ -1,0 +1,1271 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "KGV6dwRmxPJLIwme9m1oxK4iAEw",
+  "nextPageToken": "EAAaBlBUOkNCaw",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "3ySf2Zmls1jghPKhdg7XTITcHqE",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53Lm1EX2NoNDl2RHR3",
+      "snippet": {
+        "publishedAt": "2022-10-13T21:28:29Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "How are we going to do this??",
+        "description": "Visit https://www.squarespace.com/LTT and use offer code LTT for 10% off\n\nTry SimpleMDM FREE for 30 days on unlimited devices at https://lmg.gg/SimpleMDMSept\n\nMarkBench Development and Feature Request: https://linustechtips.com/topic/1460878-markbench-development-and-feature-requests/\n\nBenchmarking takes a lot of time. Time that we don’t have. And with our renewed focus on bringing more and better data to our reviews, if we want to create a quality video in time for release, something has got to give. So we automated it. Meet MarkBench! The benchmarking software that our lab is developing for use for our reviews and future Labs content. This exact software was used in our Nvidia RTX 4090 review AND AMD Ryzen 7000 series reviews. Take a look!\n\nDiscuss on the forum: https://linustechtips.com/topic/1460881-i%E2%80%99ve-wasted-my-life-testing-tech-no-more/\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n1:13 The Why\n2:31 What Is MarkBench?\n3:44 Why not use pre-made benchmarks?\n5:20 What It Is pt.2\n5:46 Our Current Process\n6:31 How MarkBench Helps\n7:45 Press Problems\n10:40 Plans for the Future\n12:22 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mD_ch49vDtw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mD_ch49vDtw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mD_ch49vDtw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/mD_ch49vDtw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/mD_ch49vDtw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "mD_ch49vDtw"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "mD_ch49vDtw",
+        "videoPublishedAt": "2022-10-13T21:28:29Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "46EAtAW4lUlgrmok95BT_pq56q4",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LjNhUEw2VHZIcXJj",
+      "snippet": {
+        "publishedAt": "2022-10-12T18:34:13Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "PC Building Simulator 2 is AMAZING!",
+        "description": "Thanks to Epic Games for sponsoring - PC Building Simulator 2 is out now on Epic Games Store: https://store.epicgames.com/p/pc-building-simulator-2\n\nLinus vs Dennis wasn't exactly fair, so this time Jake is going to see if he can do a better job than Linus when it comes to virtually building computers in the new and improved PC Building Simulator 2.\n\nDiscuss on the forum: https://linustechtips.com/topic/1460657-i-scammed-customers-in-pc-building-simulator-2-sponsored/\n\nBuy an MSI MEG Z690 Godlike: https://geni.us/SRBis\n\nBuy a GeForce RTX 3090 Ti: https://geni.us/MbvFsyz\n\nBuy an EVGA GeForce GTX 970: https://geni.us/TUqGmrV\n\nBuy an IceGiant ProSiphon Elite: https://geni.us/tAOYQ\n\nBuy some Thermal Grizzly Thermal Paste: https://geni.us/957keD\n\nBuy a HYTE Y60 Dual Chamber Case: https://geni.us/ibmfZ56\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n1:30 Our first challenge: The Tutorial\n7:49 Decorating their shops\n11:12 Linus scams while Jake messes up\n12:16 Sick PCs and shops\n13:48 Challenge 2: Free Build\n15:45 Jake Messes Up AGAIN\n16:45 Benchmarking and custom hardlining\n17:27 Floatplane\n18:38 The real challenge: Wormy\n19:20 Their final builds\n20:42 Conclusion",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/3aPL6TvHqrc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/3aPL6TvHqrc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/3aPL6TvHqrc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/3aPL6TvHqrc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/3aPL6TvHqrc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "3aPL6TvHqrc"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "3aPL6TvHqrc",
+        "videoPublishedAt": "2022-10-12T18:34:13Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "H0PKNS8UfI3M-hVRFxKGkVcmlZQ",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LlRIeGtZNTlfeGtv",
+      "snippet": {
+        "publishedAt": "2022-10-11T12:59:59Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "Is the fastest GPU ALWAYS the best?",
+        "description": "🌏Get Exclusive NordSecurity deals here ➼ https://nordsecurity.com/linus All products are risk-free with Nord's 30-day money-back guarantee!✌\n\nGet 50% off on your annual Zoho CRM subscription at: https://lmg.gg/ZohoCRM\n\nNvidia’s GeForce RTX 4090 is a GPU that’s been rumoured to be a power-hungry beast since it was first leaked. Is it really that bad? And can its gaming performance possibly justify its massive price tag?\n\nDiscuss on the forum: https://linustechtips.com/topic/1460402-is-the-fastest-gpu-always-the-best/\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n0:57 RTX 4090 - More than a mere refresh?\n2:51 Test Setup and why we didn't run 22H2\n3:15 4K Gaming Results\n4:56 1440p Gaming Results\n5:26 Ray Tracing & DLSS Gaming Results\n6:36 Where's DLSS 3.0?\n7:17 Productivity Results\n8:15 AV1\n9:27 Power consumption\n10:30 Thermals & clock stability\n11:31 Case air temperature\n12:16 Some quirks... DisplayPort and PCI Express\n14:37 Conclusion",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/THxkY59_xko/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/THxkY59_xko/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/THxkY59_xko/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/THxkY59_xko/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/THxkY59_xko/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "THxkY59_xko"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "THxkY59_xko",
+        "videoPublishedAt": "2022-10-11T12:59:59Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "MzsTr5SAedE8YXLN9EsHW2WSujA",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LldWanRLNzFxcVhV",
+      "snippet": {
+        "publishedAt": "2022-10-10T17:05:30Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "I bought a SECOND GPU… but NOT for gaming…",
+        "description": "Repower your devices with iFixit at https://iFixit.com/LTT\n\nAs the first Intel dGPU in over 20 years, the A380 stumbled out of the gate with buggy drivers and so-so gaming performance… but when we saw the prices of NVIDIA’s RTX 4000 series GPUs, it got us thinking… maybe there’s another way to get next-gen features like AV1…\n\nHuge thanks to EposVox for helping us with this video! Check out what they have to say about AV1 here: https://www.youtube.com/watch?v=ctbTTRoqZsM\n\nDiscuss on the forum: Forum thread coming soon!\n\nBuy an Intel A380 https://geni.us/nRq8B\nBuy an Intel A380 https://lmg.gg/16Blu\nBuy a GeForce RTX 3060 GPU: https://geni.us/7IcN1vg\nBuy a GeForce RTX 3070 GPU: https://geni.us/YyYzxxa\nBuy a Radeon RX 6600 GPU: https://geni.us/UtTZNS\nBuy an OC GeForce RTX 2060 GPU: https://geni.us/CtQFAzQ\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n1:05 Unconventional proposal\n3:15 Why AV1?\n4:52 Visual demonstration\n6:48 The A380 has a use!\n8:12 Benchmarking image quality\n9:07 Drawbacks... and more benefits!\n11:49 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WVjtK71qqXU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WVjtK71qqXU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WVjtK71qqXU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/WVjtK71qqXU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/WVjtK71qqXU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "WVjtK71qqXU"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "WVjtK71qqXU",
+        "videoPublishedAt": "2022-10-10T17:05:30Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "fw-DIdc5ofVtRUbHCOjgWmonxnE",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LmJsVV8yd0lNVDRV",
+      "snippet": {
+        "publishedAt": "2022-10-09T16:53:05Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "The God of Computer Fans",
+        "description": "Get $25 off all pairs of Vessi Footwear with offer code LinusTechTips at https://www.Vessi.com/LinusTechTips\n\nGet 50% off on your annual Zoho CRM subscription at: https://lmg.gg/ZohoCRM\n\nBeing Delta Electronic's most powerful fan we had to try the THD2048HT - aka Blowzooka - out.\n\nDiscuss on the forum: https://linustechtips.com/topic/1460020-the-god-of-computer-fans/\n\nCheck out the Blowzooka: https://www.delta-fan.com/thd2048ht.html\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 - Your computer fan's Daddy\n0:54 - Zoho CRM!\n1:10 - LTT Intro\n1:18 - Unboxing and specs\n3:10 - Power supply\n7:15 - Powering it on\n8:00 - Saftey Test feat. Carrots\n10:10 - Speed check\n12:20 - Installing into case\n15:04 - Running in computer\n18:12 - Test Results\n19:29 - Vessi!\n20:10 - Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/blU_2wIMT4U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/blU_2wIMT4U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/blU_2wIMT4U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/blU_2wIMT4U/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/blU_2wIMT4U/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "blU_2wIMT4U"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "blU_2wIMT4U",
+        "videoPublishedAt": "2022-10-09T16:53:05Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Ib03uqcaz6jODSbm3epJ58Q0Aa0",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53Lk1vektyRG9TMURj",
+      "snippet": {
+        "publishedAt": "2022-10-08T17:00:06Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "Our DIY CPU Chiller From AliExpress is RIDICULOUS",
+        "description": "Get a 15-day free trial for unlimited backup at https://backblaze.com/LTT\n\nCheck out Zoho MarketingPlus at: https://lmg.gg/zohomarketingplus\n\nRyzen 7000 just launched which means one thing - we need to sub-zero it, and this time we're doing it on the cheap.\n\nDiscuss on the forum: https://linustechtips.com/topic/1459857-this-cooler-draws-2400w/\n\nBuy an AMD 7950X: https://geni.us/k61Br\nCheck out the AsRock X670E Taichi: https://geni.us/NsOJJ\nBuy an MSI 3090 Suprim: https://geni.us/r4Gu9K\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 - A terrible idea\n0:45 - Zoho MarketingPlus!\n0:57 - LTT Intro\n1:07 - How TECs Work\n2:29 - Mounting 20 TECs\n4:22 - Power, manifolds, tubing, soldering\n7:02 - Filling hot side\n12:04 - Filling cold side feat. Antifreeze\n14:21 - Subzero Prep\n16:05 - Overclocking\n19:03 - Backblaze\n19:53 - Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/MozKrDoS1Dc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/MozKrDoS1Dc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/MozKrDoS1Dc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/MozKrDoS1Dc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/MozKrDoS1Dc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 5,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "MozKrDoS1Dc"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "MozKrDoS1Dc",
+        "videoPublishedAt": "2022-10-08T17:00:06Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "mACk5jNYtW94K8rFAZZdtiUtD3o",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53Lmx0eW50U0lWc2pB",
+      "snippet": {
+        "publishedAt": "2022-10-08T02:41:01Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "4K YouTube Is Getting PAYWALLED - WAN Show October 7, 2022",
+        "description": "Try Zoho One free for 30 days with no credit card required here: https://www.zoho.com/one/lp/linus.html\nSave 10% off your Savage Jerky order today with code WANSHOW22 at https://savagejerky.com/ltt\nVisit https://www.squarespace.com/WAN and use offer code WAN for 10% off\n\nPodcast Download: https://anchor.fm/thewanshowpodcast/episodes/4K-YouTube-Is-Getting-PAYWALLED---WAN-Show-October-7--2022-e1p2sgr\n\nTimestamps: (Courtesy of NoKi1119)\n0:00 Chapters\n0:50 Intro\n1:19 Topic #1 - YouTube restricts 4K to Premium\n3:58 2160p, 10 ads & YouTube's statement\n6:56 Chrome's Manifest V3\n10:06 4K as premium only? discussing FP, costs, services\n24:52 Lack of competition, accessibility, renting from a library\n40:49 LTTStore screw-top lid, golden ABC's plush, swim trunks sale\n44:10 Topic #2 - Intel Arc GPUs\n45:08 Pricing, unstable gaming experience\n47:46 Experience with iGPU, discussing past gens\n55:44 Intel is THE competitor, 30 day Arc challenge\n1:02:06 Luke hasn't seen any 4090 in person\n1:02:30 Sponsor - Zoho One\n1:03:27 Sponsor - Squarespace\n1:04:48 Sponsor - Savage Jerky\n1:06:34 Topic #3 - NVIDIA's ridiculously HUGE GPUs\n1:08:08 Luke reacts to the Founders Edition\n1:09:08 ASUS's ROG Strix series\n1:10:52 ZOTAC's GAMING series\n1:11:42 Linus returns with a 1080 to compare\n1:13:02 MSI's SUPRIM X series\n1:13:38 iGame's Vulcan series\n1:16:10 Thoughts on the sheer size & weight of the cards\n1:19:20 Comments on the AirPods 2 video, cruise control, voice auto-completion\n1:43:22 Topic #4 - Super Mario Bros movie trailer\n1:44:03 Watching the trailer, live commentary\n1:46:17 Thoughts on trailer & Chris Pratt\n1:47:55 Topic #5 - Overwatch 2's bad release\n1:49:44 Expensive cosmetics, game changes\n1:54:06 Topic #6 - Starforge computer review reaction\n1:57:54 Linus reaffirms the logo's C&B look\n1:59:32 Merch Messages #1\n1:59:46 Floatplane app for TVs & NVIDIA Shield\n2:00:32 Peer-to-peer to alleviate costs\n2:01:36 CDN for Floatplane\n2:07:52 Links of information from Labs\n2:17:04 Practical gauche to keep an eye out for\n2:18:32 AI on procedural generated gaming assets\n2:22:28 Recommending games\n2:23:10 How long until RISC-V goes x86-level mainstream?\n2:24:40 Nostalgic tech that sucked\n2:27:02 LMG's stability, impact on Linus's happiness\n2:28:34 Tech to be excited for\n2:30:00 Pimax 5K review idea\n2:30:56 Paternal tech Linus uses\n2:31:28 Linus on failed video ideas\n2:33:32 Predicting & planning for LMG's future\n2:35:23 Weirdest or coolest thing signed for fans\n2:36:46 Thoughts on Google Matter\n2:37:16 Rootkit development for gaming\n2:38:03 Making labs benchmarking tools public\n2:43:18 What does LMG do for power management?\n2:44:36 Hiring people from the US\n2:45:05 Items that are a must-have in cars\n2:47:25 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ltyntSIVsjA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ltyntSIVsjA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ltyntSIVsjA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ltyntSIVsjA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ltyntSIVsjA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 6,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "ltyntSIVsjA"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "ltyntSIVsjA",
+        "videoPublishedAt": "2022-10-08T02:41:01Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "721kbwl9S3Y208lQRatYWfG5CqI",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LjY1TmF1cEloeG1j",
+      "snippet": {
+        "publishedAt": "2022-10-07T21:00:13Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "This mouse makes no sense... #SHORTS #pcgaming #retrogaming",
+        "description": "Most of us have NEVER used a trackball mouse before! Would we ever use it again? Wait until the end...\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/65NaupIhxmc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/65NaupIhxmc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/65NaupIhxmc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/65NaupIhxmc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/65NaupIhxmc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 7,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "65NaupIhxmc"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "65NaupIhxmc",
+        "videoPublishedAt": "2022-10-07T21:00:13Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "4kT8UAFssc7BPlv5nnllUlRiPd0",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53Lm5FVFFHdHQwMjRr",
+      "snippet": {
+        "publishedAt": "2022-10-07T01:08:09Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "I will play ANY game you ask on Intel Arc",
+        "description": "Try FreshBooks free, for 30 days, no credit card required at https://www.freshbooks.com/linus\n\nCreate your build at https://www.buildredux.com/linus\n\n1:50 Elden Ring\n14:25 Crysis\n27:41 Cities Skylines\n33:31 Forza Horizon 5\n37:13 The Witcher III\n48:00 Team Fortress 2\n59:50 Anno 1800\n01:08:23 Rocket League\n01:21:20 BeamNG\n01:27:00 Sactisfactory\n01:36:00 GTA V\n01:52:30 Skyrim\n01:55:25 Half Life 2\n01:59:30 HALO Master Chief Collection\n02:12:00 DOOM Eternal\n02:23:22 PUBG \n02:23:44 Valheim\n02:33:11 Destiny 2\n02:50:50 Minecraft\n03:01:13 Descenders\n03:05:30 Linus \"dropping\" out controversial news\n03:10:44 Fallout 4\n03:14:19 The guys just comparing sizes \n03:15:14 Why is it so big?\n03:17:00 Still Fallout 4\n03:20:05 Control\n03:33:03 Battlefield V\n03:46:53 Prices of 6600 XT, 3060 and the Arc 770\n03:47:39 The drivers can only improve, they can't get worse (u sure about that mate?)",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nETQGtt024k/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nETQGtt024k/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nETQGtt024k/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nETQGtt024k/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/nETQGtt024k/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 8,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "nETQGtt024k"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "nETQGtt024k",
+        "videoPublishedAt": "2022-10-07T01:08:09Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "oJrvgKV38TEEKudmznY2glU7DYk",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LjZUOWQ5TE0xVHdZ",
+      "snippet": {
+        "publishedAt": "2022-10-05T13:00:07Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "Please Buy Intel GPUs.",
+        "description": "Learn more about NexiGo's family of webcams here: https://viraln.link/LTTxWebcams\n\nSave 10% and Free Worldwide Shipping at Ridge Wallet by using offer code LINUS at https://www.ridge.com/LINUS\n\nIntel's Arc Alchemist A770 and A750 GPUs are FINALLY launching and these are some surprisingly competitive cards, sometimes.\n\nBuy Intel Arc A770: https://geni.us/lAjE\n\nDiscuss on the forum: https://linustechtips.com/topic/1459237-please-buy-intel-gpus/\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 - Shill Hat\n1:14 - Ridge\n1:27 - LTT Intro\n1:35 - Intel's Original Target\n2:24 - DX12 Gaming Performance\n3:26 - DX11, DX9 Performance\n5:16 - Three Tier Pricing\n6:25 - The RX 6600 exists..\n7:30 - ReBAR\n8:15 - Arc's extra features\n11:12 - Linux support?\n11:42 - An appeal to you\n13:32 - NexiGo\n13:57 - Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6T9d9LM1TwY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6T9d9LM1TwY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6T9d9LM1TwY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/6T9d9LM1TwY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/6T9d9LM1TwY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 9,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "6T9d9LM1TwY"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "6T9d9LM1TwY",
+        "videoPublishedAt": "2022-10-05T13:00:07Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "98rEO1Lnl-4zPMGnLsWlRymYYJQ",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LnlheUFRQUMxWGlF",
+      "snippet": {
+        "publishedAt": "2022-10-04T16:59:39Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "Intel PLEASE let me Overclock this!",
+        "description": "Visit https://www.squarespace.com/LTT and use offer code LTT for 10% off\nCheck out SignalRGB and sync all your RGB peripherals at https://bit.ly/LinusTips\n\nMSI's MAG B660M Mortar Max motherboard has a secret chip up its sleeve that people all over the world won't get access to until after Raptor Lake launches. Is Base Clock Overclocking worth the hassle in modern games and productivity? Why are we locked out of this on non-K CPUs if we want to try it out?\n\nDiscuss on the forum: https://linustechtips.com/topic/1459095-stop-neutering-your-products-intel/\n\nBuy an Intel Core i5 12500: https://geni.us/kv6yR\n\nBuy an MSI MAG B600M Mortar: https://geni.us/eT7fa\n\nBuy a kit of Crucial Ballistix 3200 DDR4 RAM: https://geni.us/kuXYf\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n1:14 B660M Mortar Max\n2:25 Overclocking\n6:00 5.25GHz Results\n7:12 AMD\n9:13 BCLK Issues\n10:15 Conclusion\n13:06 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yayAQAC1XiE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yayAQAC1XiE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yayAQAC1XiE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/yayAQAC1XiE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/yayAQAC1XiE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 10,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "yayAQAC1XiE"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "yayAQAC1XiE",
+        "videoPublishedAt": "2022-10-04T16:59:39Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "7Rslly_G56YT6oKY0ddZvO86Tww",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LmZvTFBYNFlUd0hr",
+      "snippet": {
+        "publishedAt": "2022-10-03T17:00:19Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "I Thought My Childhood was LOST",
+        "description": "Get $25 off all pairs of Vessi Footwear with offer code LinusTechTips at https://www.Vessi.com/LinusTechTips\n\nCheck out Crucial's gaming products at https://crucial.gg/LTT_CrucialWellPlayedGaming\n\nLinus tries to backup some embarrassing VHS tapes from his childhood with the help of Mark's VCR.\n\nDiscuss on the forum: https://linustechtips.com/topic/1458916-i-want-my-data-back/\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n1:18 Will this work?\n3:40 What makes a GOOD VCR?\n6:49 What else you'll need\n9:44 WATCHING THE TAPES\n13:04 The capture setup\n13:34 TEENAGE LINUS\n19:01 Linus tries French\n19:39 Improving the quality\n21:15 Bad Backup strategies\n23:15 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/foLPX4YTwHk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/foLPX4YTwHk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/foLPX4YTwHk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/foLPX4YTwHk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/foLPX4YTwHk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 11,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "foLPX4YTwHk"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "foLPX4YTwHk",
+        "videoPublishedAt": "2022-10-03T17:00:19Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "P1kmydywOthAYFFXecsS_pPfWUY",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LkhaaWFIRW1FOVBR",
+      "snippet": {
+        "publishedAt": "2022-10-02T16:57:35Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "Buying a Chromebook was a BIG MISTAKE",
+        "description": "Try FreshBooks free, for 30 days, no credit card required at https://www.freshbooks.com/linus\n\nCreate your build at https://www.buildredux.com/linus\n\nYour old MacBook is really chugging these days. But new computers with fancy Nvidia GPUs and AMD Ryzen chips are very expensive. Here's a way you could save a buck! Chrome OS Flex! Google will now let you install Chrome OS on your own device for free. But can it actually improve old devices? We tested to find out!\n\nDiscuss on the forum: https://linustechtips.com/topic/1458378-buying-a-chromebook-was-a-big-mistake-chrome-os-flex/\n\nBuy a 1 TB Samsung 970 EVO SSD NVMe : https://geni.us/WP3ETA\nBuy a 240GB Crucial SATA SSD: https://geni.us/8sdi9Ht\nBuy a Crucial MX500 250GB SSD: https://geni.us/XO5Dpj\nBuy Bush's Baked Beans: https://geni.us/QCj6V\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 CrINgeTRO\n1:45 The Laptops\n3:05 How we tested\n4:04 How slow are they?\n5:25 Installing Chrome OS Flex\n6:34 BIG CAVEAT\n7:49 Chrome OS Flex Results\n10:39 Can you run it?\n11:53 Chrome OS Flex limitations\n13:17 Alternatives\n14:32 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/HZiaHEmE9PQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/HZiaHEmE9PQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/HZiaHEmE9PQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/HZiaHEmE9PQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/HZiaHEmE9PQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 12,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "HZiaHEmE9PQ"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "HZiaHEmE9PQ",
+        "videoPublishedAt": "2022-10-02T16:57:35Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "JGmahP4-g5G8LVhB4ptS5qYyoz4",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LjdGbGU1NW1aX1dR",
+      "snippet": {
+        "publishedAt": "2022-10-01T17:12:00Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "I didn't WANT to be mean, but...",
+        "description": "See NordPass Business in action now with a 3-month free trial at https://www.nordpass.com/linusbusiness with code LINUSBUSINESS\n\nSave 10% and Free Worldwide Shipping at Ridge Wallet by using offer code LINUS at https://www.ridge.com/LINUS\n\nStarforge Systems are a system builder created by Twitch streamers that gained notoriety for their bad configs on launch. Have they been able to turn it around?\n\nDiscuss on the forum: https://linustechtips.com/topic/1458531-this-has-never-worked/\n\nBuy an Intel Core i9-12900 (16 Core): https://geni.us/FVWc\nBuy a Corsair iCUE H150i Liquid Cooler: https://geni.us/wjXFbzQ\nBuy an MSI PRO z690-A Motherboard: https://geni.us/9DSzAnA\nBuy a Kit of Corsair Vengeance RT 32GB DDR4 RAM: https://geni.us/SWfSh4e\nBuy a Samsung 980 Pro 2 TB NVME SSD: https://geni.us/V33TL\nBuy a Zotac GeForce RTX 3080 Ti 12 GB: https://geni.us/Vj0h57Q\nBuy a Corsair iCUE 5000X RGB ATX Mid Tower Case: https://geni.us/qUNK\nBuy a Corsair RM1000x 1000 W Power Supply: https://geni.us/kJqI31x\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 - The Appeal of System Building\n1:33 - Ridge!\n1:55 - Why I don't sell PCs\n2:30 - Who are Starforge Systems\n4:09 - Our System\n10:01 - Turning it on\n14:57 - We had a chat with Starforge\n17:12 - Performance & Price\n19:58 - NordPass\n20:59 - Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/7Fle55mZ_WQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/7Fle55mZ_WQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/7Fle55mZ_WQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/7Fle55mZ_WQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 13,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "7Fle55mZ_WQ"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "7Fle55mZ_WQ",
+        "videoPublishedAt": "2022-10-01T17:12:00Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "3LfHWyLHHTgCBzO-Bu8iAA6hCeU",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LjBrTFg2ZXdxUTk4",
+      "snippet": {
+        "publishedAt": "2022-10-01T05:06:48Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "USB Branding Changed Again... - WAN Show September 30, 2022",
+        "description": "Learn more about the KIOXIA CM7 Series at https://lmg.gg/KIOXIACM7\nCheck out 45Drives Storage Solutions: https://www.45drives.com/\nSave up to $300 on your Secretlab chair at https://lmg.gg/SecretLabWAN\n\nPodcast Download: https://anchor.fm/thewanshowpodcast/episodes/USB-Branding-Changed-Again------WAN-Show-September-30--2022-e1oobt9\n\nTimestamps: (Courtesy of NoKi119)\n0:00 Chapters\n1:17 Intro\n1:43 Topic #1: USB branding change\n2:14 Name change history, SuperSpeed is no more\n5:00 Google links rant, USB4 guidelines\n9:05 USB-IF CEO quote on USB speed, Linus's take\n12:18 LTTStore SC sweatpants, merch update\n13:40 Topic #2: Luke finally found shoes\n14:12 \"Schrödinger shoes\", Luke shoes story\n15:50 Unboxing the shoes\n17:20 Topic #3: Stadia shuts down\n18:56 Phil's meeting e-mail, refunding purchases\n22:10 G Cloud lacked Stadia, discussing subscriptions\n26:22 Linus & Luke on Outlook\n28:08 Outlook V.S. Gmail, services Google killed\n34:12 Discussing sales & developers\n38:15 Developer on Stadia game port, Google's habit\n41:18 LTT can get a Stadia developer kit\n42:50 Sponsor - KIOXIA\n43:40 Sponsor - 45Drives\n44:16 Sponsor - SecretLab\n44:56 Topic #4: LMG \"recalling\" backpack carabiners\n49:30 Showing future carabiner pull examples\n55:55 Topic #5: ShortCircuit Oura Ring video removed\n57:44 Reason behind removal, partnership ended\n1:01:04 Recalling mispronounced product names\n1:04:28 Developers on stage, recalling Blizzard\n1:06:00 Topic #6: Lab name rebranding\n1:09:14 Topic #7: DBrand's Killswitch reduces fan RPM\n1:12:38 Magnetic stand replaced with a mechanical one\n1:14:14 Topic #8: Luke's wild night out\n1:16:34 How the budgie was found\n1:19:26 People staring at Local Nutter Luke\n1:21:50 Topic #9: AMD's Ryzen 7000 & Intel's 12th Gen\n1:22:24 Pros and cons of next-gen chips\n1:24:46 Discussing productivity\n1:26:32 What LTT did not review, Intel's 13th Gen\n1:28:02 Intel's power efficiency & affordability\n1:30:28 Linus on \"competition\" between brands\n1:31:58 Topic #10: CSF's video of Dennis V.S. Linus\n1:32:22 Dennis's training, Linus on his scare\n1:36:46 Thoughts on the fight & scoring system\n1:41:14 Luke's thoughts on the break & Dennis\n1:45:22 Linus accepts rematch, what to change\n1:54:50 Linus on LMG christmas party\n1:58:02 Merch Messages #1\n1:58:24 Solutions to bypass a 15 amp breakers\n2:00:04 Linus's Cadpad parka from old WAN shows\n2:02:06 Labs handling stock & shipment video idea\n2:02:50 Savant for home automation\n2:04:32 Luke's favorite character from The Yard\n2:05:12 Would USB become a new standard?\n2:05:52 Advice on hiring in small staff\n2:06:57 Backpack or screwdriver? LUKE IS LINUS'S SON!\n2:08:24 Other cable thoughts for LTTStore\n2:09:36 Recommendation for Oura ring alternatives\n2:11:02 Why is Linus not wearing the Pebble?\n2:11:50 Would LMG acquire a content creator?\n2:14:46 Why iGPUs are not benchmarked?\n2:16:00 Innovating & projects as a company\n2:18:14 High-end product impact on Linus's idea of value\n2:23:13 Inflation's impact on LMG\n2:25:04 What products & services Linus & Luke miss\n2:28:22 Reflectors on backpack idea\n2:29:38 Compressors on microphones when quiet\n2:32:36 ServeTheHome's Patrick celebrates 100k subs\n2:33:12 Mrwhosetheboss's Samsung battery video\n2:34:00 YouTube on the retention for faster speed\n2:36:38 Why did Luke pursue software engineer?\n2:40:16 Linus sees LMG employees on FP\n2:41:16 randomfrankp's video on Logitec Brio 500\n2:44:22 Highest LTTStore product margin, T-Shirt extended sizes\n2:46:12 Video of how LMG earns money\n2:47:40 \"Hovercraft\" cloud gaming service idea\n2:48:50 Why RTX costs a lot in Australia?\n2:49:36 Discussing LMG's interest in developers\n2:51:36 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0kLX6ewqQ98/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0kLX6ewqQ98/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0kLX6ewqQ98/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/0kLX6ewqQ98/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/0kLX6ewqQ98/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 14,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "0kLX6ewqQ98"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "0kLX6ewqQ98",
+        "videoPublishedAt": "2022-10-01T05:06:48Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "g7gH2AYLcsO1YsUZWgSvIeNoFSA",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LmhJUDJPMHpDLURZ",
+      "snippet": {
+        "publishedAt": "2022-09-30T16:00:35Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "What's in Linus' Backpack? (2022) #SHORTS #whatsinmybag",
+        "description": "Ever wonder what Linus stores in his daily driven LTT backpack? Contrary to popular belief, it's not his tech tips... http://lttstore.com\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/hIP2O0zC-DY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/hIP2O0zC-DY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/hIP2O0zC-DY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/hIP2O0zC-DY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/hIP2O0zC-DY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 15,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "hIP2O0zC-DY"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "hIP2O0zC-DY",
+        "videoPublishedAt": "2022-09-30T16:00:35Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "vQVz45hPhPdckJdpSmgFqlQ54Xg",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LjZpS2laeW14REQ4",
+      "snippet": {
+        "publishedAt": "2022-09-29T16:53:00Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "This is TWO PCs!",
+        "description": "Sign up today for Oracle's CloudWorld event hosted in Las Vega from October 17th - 20th and use code DEVY to save $400 at the link here: https://lmg.gg/CloudWorld\n\nSave 10% and Free Worldwide Shipping at Ridge Wallet by using offer code LINUS at https://www.ridge.com/LINUS\n\nThere are a ton of reasons why a person might want to own more than one PC, but a surprising lack of cases that support two systems at once- and that’s strange, because so many cases out there have a large amount of empty space. Even in an ITX build, we think there’s a better use for all that space: another PC!\n\nDiscuss on the forum: https://linustechtips.com/topic/1458163-this-is-two-pcs/\n\nBuy a PNY NVIDIA GeForce RTX 3060 12GB Single Fan GPU: https://geni.us/4JeSjxM\nBuy a Cooler Master NR200P Mini Case: https://geni.us/sg0BGJf\nBuy an OwlTree External Power Switch: https://geni.us/YxHZI27\nBuy a 10 Pack of Rubber Feet: https://geni.us/z3CXiDn\nBuy an AMD Ryzen™ 5 5600 6-Core: https://geni.us/59sH7\nBuy an ASUS ROG Strix B550 Motherboard: https://geni.us/Jlv5\nBuy a Kit of Patriot Signature Premium DDR4 RAM: https://geni.us/C2sA\nBuy an ID-Cooling IS-50X V2 CPU Cooler: https://geni.us/yEQJ\nBuy a Crucial P5 Plus NVMe SSD: https://geni.us/Wd1Z40T\nBuy a Phanteks Revolt SFX 750W Power Supply: https://geni.us/KGl4kg\nBuy a Corsair SF750 Modular Power Supply: https://geni.us/q9MHV6e\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n2:00 The Plan\n3:00 How to turn them on\n3:40 Motherboard + CPU\n5:22 Power Supply Choice\n6:10 RAM\n7:22 Cooling\n9:05 Graphics Cards\n10:29 COMBINE THE HEMISPHERES!!\n11:51 we need to customize it..\n14:05 Gaming on it\n15:40 OK, we changed it\n16:02 Blender test\n17:02 Does this even make sense?\n18:35 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6iKiZymxDD8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6iKiZymxDD8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6iKiZymxDD8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/6iKiZymxDD8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/6iKiZymxDD8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 16,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "6iKiZymxDD8"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "6iKiZymxDD8",
+        "videoPublishedAt": "2022-09-29T16:53:00Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "MA-LAIae_qOvpGQ3CQr64xn3cLk",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53Lnc2R1RmNkFUbGhv",
+      "snippet": {
+        "publishedAt": "2022-09-28T22:04:24Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "Apple NEVER Learns. - M2 Macbook Review",
+        "description": "Go to https://privacy.com/linus \u200bto get $5 off your first purchase!\n\nTry SimpleMDM FREE for 30 days on unlimited devices at https://lmg.gg/SimpleMDMSept\n\nApple’s M2 SoC has been out for a while, but are the new MacBook Air and Pro models living up to the hype? Or is it just a lot of hot Air?\n\nDiscuss on the forum: https://linustechtips.com/topic/1458024-apple-never-learns/\n\nBuy a MacBook Air M2: \nAmazon: https://geni.us/slih\nBest Buy: https://howl.me/cibgDBg9bCt\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n1:09 Apple's Cooling Solution (or lack thereof)\n2:52 Thermal Testing\n3:22 Design, IO and Charging\n4:24 Storage\n5:50 Benchmarking\n7:27 Real World Workloads\n8:25 Overall Performance Results\n9:17 Battery Life\n10:13 Concluding Thoughts on the Air\n10:38 As for the Pro...\n11:38 Final Thoughts",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/w6GTf6ATlho/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/w6GTf6ATlho/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/w6GTf6ATlho/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/w6GTf6ATlho/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/w6GTf6ATlho/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 17,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "w6GTf6ATlho"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "w6GTf6ATlho",
+        "videoPublishedAt": "2022-09-28T22:04:24Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Tai71dOkEaTq3aLAW_Ras6E2Ikc",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LmVBYTQxdlZjbEdB",
+      "snippet": {
+        "publishedAt": "2022-09-28T06:47:17Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "Play Fair, Intel",
+        "description": "New Customers Exclusive – Get $25 off your purchase of any AMD and Intel Processor (limit one per customer): https://micro.center/1jb\nCheck out Micro Center’s Custom PC Builder: https://micro.center/97x\n\nSubmit Your Build to the Build Showcase: https://micro.center/659ea5\nShop MSI Katana GF76 Gaming Laptop: https://micro.center/swx\n\nTEAMGROUP T-Force Delta RGB DDR5 Ram 32GB Kit (2x16GB) \nAt Newegg: https://bit.ly/3Rv5OjO\nAt Amazon: https://amzn.to/3KQBRbk\n\nIntel's 13th gen, Raptor lake, is finally here! The timing couldn't be worse with AMD's processors launching just yesterday, but the 13900K is nothing to sneeze at and if the price is right and the graphs don't lie, then AMD might have to reconsider the 7950X at $699.\n\nDiscuss on the forum: https://linustechtips.com/topic/1457861-play-fair-intel/\n\nPurchase an Intel Core i9-12900K Desktop Processor at https://geni.us/F14VY0\n\nPurchase an Intel Core i7-12700K Desktop Processor at https://geni.us/lPf1M\n\nPurchase an Intel Core i5-12600K Desktop Processor at https://geni.us/KApC\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n2:07 13th Gen\n3:56 Graphs\n6:00 Fine Print\n8:00 Mega Tasking\n9:00 Wattage\n10:15 Budget\n11:20 Conclusion\n13:04 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/eAa41vVclGA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/eAa41vVclGA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/eAa41vVclGA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/eAa41vVclGA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/eAa41vVclGA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 18,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "eAa41vVclGA"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "eAa41vVclGA",
+        "videoPublishedAt": "2022-09-28T06:47:17Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "_HLJjJ7um2oFdnUzYxu66GQLO1s",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53Ll92THEyUGptSXgw",
+      "snippet": {
+        "publishedAt": "2022-09-26T13:00:02Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "AMD is in TROUBLE – Ryzen 7000 Full Review",
+        "description": "Learn more about NexiGo's family of webcams here: https://viraln.link/LTTxWebcams\n\nGet 30% off the UGREEN Nexode 140W Charger with code 20UGREEN20 on Amazon at https://amzn.to/3LsSs59 and their official website at https://bit.ly/3CazPjC\n\nAt long last, AMD has launched their new Zen 4 CPUs, Ryzen 7950X, 7900X, 7700X, and 7600X, and they look great. Alongside the enhancements of socket AM5, these new chips look like they give Intel a run for their money... or do they? AMD has a bit of an issue of not being better than their best gaming chip, or better value than Intel's platform which makes some of these chips hard to recommend. And with Intel's Raptor Lake looming on the horizon, AMD's future might not look so bright anymore.\n\nDiscuss on the forum: https://linustechtips.com/topic/1457486-amd-is-in-trouble-%E2%80%93-ryzen-7000-full-review/\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n1:24 The new stuff!\n3:05 Gaming Benchmarks\n5:25 Productivity Benchmarks\n8:24 Power and Thermals\n11:28 iGPU\n12:23 Our Take\n14:33 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_vLq2PjmIx0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_vLq2PjmIx0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_vLq2PjmIx0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/_vLq2PjmIx0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/_vLq2PjmIx0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 19,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "_vLq2PjmIx0"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "_vLq2PjmIx0",
+        "videoPublishedAt": "2022-09-26T13:00:02Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "lWwla4V-tfXV9OMoc_0KfYFmI7U",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LjRWX3BZQTdVcTBV",
+      "snippet": {
+        "publishedAt": "2022-09-25T16:59:43Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "I LOVE Paywalls. Thanks Intel! - ECC Support on Alder Lake",
+        "description": "Check out Jackery’s Solar Generator 1000 Pro at\nhttps://geni.us/aL7Ys or on Amazon: https://geni.us/tvzQ8W\nUse code LinusTechTips for 10% off!\n\nCreate your build at https://www.buildredux.com/linus\n\n12th Gen Intel supports ECC memory, but you're going to need a specific chipset to utilize it. A chipset only available on expensive workstation motherboards that lack other features you might want... So just how badly do you need Error Correction Code memory in the first place?\n\nDiscuss on the forum: https://linustechtips.com/topic/1457330-i-love-paywalls-thanks-intel/\n\nPurchase an i7-12700K: https://geni.us/RPyj54U\nPurchase an Crucial Ballistix 3200MHz C16: https://geni.us/JQWiTPM\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n1:25 12th Gen Intel\n2:24 Pentium G6951\n5:04 ECC Today\n7:44 Thanks Intel\n9:00 Business Time\n10:25 AMD\n11:28 Conclusion\n12:39 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4V_pYA7Uq0U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4V_pYA7Uq0U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4V_pYA7Uq0U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/4V_pYA7Uq0U/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/4V_pYA7Uq0U/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 20,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "4V_pYA7Uq0U"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "4V_pYA7Uq0U",
+        "videoPublishedAt": "2022-09-25T16:59:43Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "aXo_MKWoW-ZsePgEnozxxtTSnRQ",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LjhkRUl5MVlYSjRB",
+      "snippet": {
+        "publishedAt": "2022-09-24T16:59:58Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "My wife vetoed my plan",
+        "description": "Thanks to Govee for sponsoring today's video! Be sure to check out their \"Govee Glide\" products below!\nGovee Glide Hexa Lights:\nAmazon: https://amzn.to/3QZZvDz ($20 Coupon + $40 off code: GOVEEGAM)\nGovee: https://bit.ly/3f3Sg05\n\nGovee Glide Wall Lights:\nAmazon: https://amzn.to/3BXoHq7 ($20 Coupon)\nGovee: https://bit.ly/3BXXKT4\n\nGovee RGBIC Neon Lights:\nAmazon: https://amzn.to/3xF5tmw ($30 Coupon)\nGovee: https://bit.ly/3BXpQhp\n\nGovee Lyra Floor Lamp:\nAmazon: https://amzn.to/3dAoMXq\nGovee: https://bit.ly/3R1ZU8r\n\nDiscuss on the forum: https://linustechtips.com/topic/1457158-my-wife-vetoed-my-plan/\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro\n1:00 The LAN Room\n2:48 The Arr Jee Bee\n3:40 The KVM Setup\n5:08 A Brief Rave\n6:53 Setting Up Linus' Station\n7:52 I Was Right\n9:55 It's Bendy!\n10:55 Did Someone Unplug This\n12:20 Don't Let Linus Find Out\n14:08 Try Unplugging It\n15:37 These Are Super Cool\n17:37 It's Alive\n19:12 Wendell (MVP)\n21:24 The Bendy Boy is Back\n24:25 Symmetrical Dan\n25:32 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8dEIy1YXJ4A/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8dEIy1YXJ4A/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8dEIy1YXJ4A/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/8dEIy1YXJ4A/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/8dEIy1YXJ4A/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 21,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "8dEIy1YXJ4A"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "8dEIy1YXJ4A",
+        "videoPublishedAt": "2022-09-24T16:59:58Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "ESwGUONC4SC4-_qTdRVsG6kmFXQ",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LjdZdWlGbGhlOGo0",
+      "snippet": {
+        "publishedAt": "2022-09-24T03:50:38Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "NVIDIA Thinks You're RICH - WAN Show September 23, 2022",
+        "description": "Discover more about Shadow's Business Solutions at https://shdw.me/linus-b2b\nLearn more about the KIOXIA XG8 Series at https://lmg.gg/KIOXIAXG8\nTry one month of Epidemic Sound free at https://lmg.gg/ESWAN\n\nPodcast Download: https://anchor.fm/thewanshowpodcast/episodes/NVIDIA-Thinks-Youre-RICH---WAN-Show-September-23--2022-e1odq3o\n\nTimestamps: (Courtesy of NoKi1119)\n0:00 Chapters\n1:52 Intro\n2:20 LTT sponsored MKBHD's ARC PC build\n4:36 Topic #1 - NVIDIA's RTX 4000 update\n5:38 Performance claims, NVIDIA V.S. gamer roleplay\n9:02 Board design & cost per wafer's size\n18:04 What can we do about the MSRP?\n21:02 AMD's RDNA3, compared to M1 Ultra, \"Linus is biased\"\n24:00 Luke is scuba certified, Taiwan diving\n24:34 Linus returns with watercooled Vega 64\n26:36 Linus showcases Radeon VII\n27:16 Linus on R280, Fury & better hardware\n31:26 Discussing price increase through the years\n35:15 Simulating inflation, NVIDIA's progress, dead pixels recall for OLED\n38:32 Was this MSRP to get rid of RTX 3000?\n40:54 Topic #2 - Logitec G Cloud handheld\n41:06 Funny specifications on the product page\n44:52 Reading reviews & user rating\n48:12 Linus tries to write a review\n50:00 Sponsor - Shadow\n51:18 Sponsor - KIOXA\n52:15 Sponsor - Epidemic Sound\n53:00 LTTStore elemental shirt discount\n53:34 LTTStore Cargo shorts\n55:28 Linus's written review, filtered out\n57:36 Linus writes a joke review for Luke\n1:00:32 If Deck didn't exist, would it be good?\n1:02:11 Reason behind elemental shirt stock\n1:04:30 Topic #3 - LTT in Español\n1:06:22 Planned AI-generated voice\n1:09:08 Linus shows off video\n1:10:46 Merch Messages #1\n1:11:00 Why are local pricing for GPUs high?\n1:12:21 ASUS PG42UQ ghosting & Windows snap\n1:13:06 Traffic after MKBHD collab, excitement towards lab ft pizza\n1:18:46 Cloud computing, Chromebook V.S. ThinkPad\n1:24:02 Linus on MKBHD collab's impact\n1:25:40 Giving the video another shot\n1:28:48 Topic #4 - Twitch changes revenue splits\n1:31:00 Quoting Twitch's changes\n1:34:44 Twitch bans some gambling streams, talking YT VODs & revene impact\n1:42:26 Topic #5 - Framework Chromebook Edition\n1:42:38 Specifications & thoughts\n1:45:22 Discussing sustainability & what Twitch should do\n1:49:32 YouTube shorts revenue, discussing TikTok evading copyright\n1:54:40 Requirements to be eligible for revenue\n1:55:07 Licensed music, do they belong in LTT?\n1:57:50 Topic #6 - videogamedunkey's BIGMODE\n1:58:44 Community response, impact on indie games\n2:06:58 BIGMODE website, lack of responses\n2:08:20 Merch Messages #2\n2:08:26 Favorite gift given or received\n2:11:00 Pros to cons using 220V on PSU\n2:11:32 With EVGA out, would others fill the space?\n2:12:20 Running Windows on VM reliably\n2:13:10 Do you miss not needing as many devices?\n2:15:08 YouTube Shorts is addictive\n2:16:52 Linus's review on Sony A95K TV\n2:17:40 Which Zen 4 CPU for future proofing?\n2:19:14 Challenges with NA-based manufacturers for LTTStore\n2:23:30 Thoughts on new PSU specs\n2:24:51 Linus's wire fraud\n2:25:10 Avoiding quantum tunneling via 3D stacking\n2:25:36 Would LTTStore become a hub to sell YouTubers merch?\n2:35:00 What games are you currently enjoying?\n2:37:25 Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/7YuiFlhe8j4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/7YuiFlhe8j4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/7YuiFlhe8j4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/7YuiFlhe8j4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/7YuiFlhe8j4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 22,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "7YuiFlhe8j4"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "7YuiFlhe8j4",
+        "videoPublishedAt": "2022-09-24T03:50:38Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "bpBwAGxmLlNjReHZLeBQl2AaMZk",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LjNDRE9TajhmWkE0",
+      "snippet": {
+        "publishedAt": "2022-09-22T18:11:35Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "Everyone said this was impossible",
+        "description": "Try FreshBooks free, for 30 days, no credit card required at https://www.freshbooks.com/linus\n\nSmartDeploy: Claim your FREE IT software (worth $580!) at https://lmg.gg/SDSept\n\nEveryone told me I was CRAZY when I pitched running a fibre optic cable directly between our headquarters and our new testing lab for a 100-gigabit internet connection... today I prove them wrong!\n\nDiscuss on the forum: https://linustechtips.com/topic/1456774-everyone-said-this-was-impossible-backyard-fiber-run/\n\nCheck out BC Planet Healthcare: https://www.bcplanthealthcare.com/\n\nCheck out InfiniteCables Armoured Fiber Cable: https://lmg.gg/xTJRR\nCheck out InfiniteCables Fiber Cables & Accessories: https://lmg.gg/E9vGb\n\nCheck out Ubiquiti's Enterprise XG 24 Network Switch: https://lmg.gg/aoyKX\n\nCheck out MikroTik's CRS504-4XQ-IN 100GbE Network Switch: https://lmg.gg/gjDYU\n\nCheck out FS.com 100GbE Transceivers: https://lmg.gg/vBBl3\nCheck out FS.com QSFP to SFP Breakout Cables: https://lmg.gg/SEyGv\n\nPurchases made through some store links may provide some compensation to Linus Media Group.\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech\n\nMUSIC CREDIT\n---------------------------------------------------\nIntro: Laszlo - Supernova\nVideo Link: https://www.youtube.com/watch?v=PKfxmFU3lWY\niTunes Download Link: https://itunes.apple.com/us/album/supernova/id936805712\nArtist Link: https://soundcloud.com/laszlomusic\n\nOutro: Approaching Nirvana - Sugar High\nVideo Link: https://www.youtube.com/watch?v=ngsGBSCDwcI\nListen on Spotify: http://spoti.fi/UxWkUw\nArtist Link: http://www.youtube.com/approachingnirvana\n\nIntro animation by MBarek Abdelwassaa https://www.instagram.com/mbarek_abdel/\nMonitor And Keyboard by vadimmihalkevich / CC BY 4.0  https://geni.us/PgGWp\nMechanical RGB Keyboard by BigBrotherECE / CC BY 4.0 https://geni.us/mj6pHk4\nMouse Gamer free Model By Oscar Creativo / CC BY 4.0 https://geni.us/Ps3XfE\n\nCHAPTERS\n---------------------------------------------------\n0:00 Intro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/3CDOSj8fZA4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/3CDOSj8fZA4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/3CDOSj8fZA4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/3CDOSj8fZA4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/3CDOSj8fZA4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 23,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "3CDOSj8fZA4"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "3CDOSj8fZA4",
+        "videoPublishedAt": "2022-09-22T18:11:35Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "ZuxiYdFMc9WRiZ8iABMaBZR3UZk",
+      "id": "VVVYdXFTQmxIQUU2WHcteWVKQTBUdW53LmNRYnA2NEpSa2RB",
+      "snippet": {
+        "publishedAt": "2022-09-22T03:00:13Z",
+        "channelId": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+        "title": "This 2300ft cable saved us THOUSANDS of dollars... #SHORTS #networking",
+        "description": "The new new lab isn't that far, so why not use a 700 meter cable to connect to the internet? Full video coming soon...\n\n► GET MERCH: https://lttstore.com\n► SUPPORT US ON FLOATPLANE: https://www.floatplane.com/ltt\n► AFFILIATES, SPONSORS & REFERRALS: https://lmg.gg/sponsors\n► PODCAST GEAR: https://lmg.gg/podcastgear\n\n\nFOLLOW US \n---------------------------------------------------  \nTwitter: https://twitter.com/linustech\nFacebook: http://www.facebook.com/LinusTech\nInstagram: https://www.instagram.com/linustech\nTikTok: https://www.tiktok.com/@linustech\nTwitch: https://www.twitch.tv/linustech",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/cQbp64JRkdA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/cQbp64JRkdA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/cQbp64JRkdA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Linus Tech Tips",
+        "playlistId": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+        "position": 24,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "cQbp64JRkdA"
+        },
+        "videoOwnerChannelTitle": "Linus Tech Tips",
+        "videoOwnerChannelId": "UCXuqSBlHAE6Xw-yeJA0Tunw"
+      },
+      "contentDetails": {
+        "videoId": "cQbp64JRkdA",
+        "videoPublishedAt": "2022-09-22T03:00:13Z"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 5937,
+    "resultsPerPage": 25
+  }
+}
