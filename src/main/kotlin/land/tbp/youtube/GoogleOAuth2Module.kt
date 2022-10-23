@@ -19,9 +19,9 @@ import io.ktor.server.auth.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import io.ktor.server.sessions.*
+import land.tbp.land.tbp.config.Components
 import land.tbp.land.tbp.config.config
 import land.tbp.land.tbp.db.OAuth2TokenRepository
-import land.tbp.land.tbp.db.UserRepository
 
 //import land.tbp.land.tbp.db.UserRepository
 
@@ -132,7 +132,7 @@ suspend fun saveUserAndAuthToken(principal: OAuthAccessTokenResponse.OAuth2, goo
         }
     }.body<GoogleUserInfo>()
 
-    val userRecord = UserRepository().upsert(userInfo)
+    val userRecord =Components.userRepository.upsert(userInfo)
     OAuth2TokenRepository().upsert(principal, userRecord.userId!!) // todo autowire the repo
 }
 

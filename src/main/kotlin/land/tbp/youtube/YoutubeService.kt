@@ -1,14 +1,16 @@
 package land.tbp.land.tbp.youtube
 
-import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport
-import com.google.api.client.json.gson.GsonFactory
-import com.google.api.services.youtube.YouTube
-import com.google.auth.http.HttpCredentialsAdapter
-import com.google.auth.oauth2.UserCredentials
+import land.tbp.jooq.tables.daos.YoutubeChannelDao
+import land.tbp.jooq.tables.pojos.Subscription
+import land.tbp.jooq.tables.pojos.YoutubeChannel
+import land.tbp.jooq.tables.references.SUBSCRIPTION
+import land.tbp.jooq.tables.references.YOUTUBE_CHANNEL
+import land.tbp.land.tbp.config.Components
+import land.tbp.land.tbp.config.Components.userRepository
 import land.tbp.land.tbp.config.config
-import land.tbp.land.tbp.db.UserRepository
+import land.tbp.land.tbp.db.dslContext
 
-private const val APPLICATION_NAME = "API code samples"
+const val APPLICATION_NAME = "API code samples" // todo should this be an application property?
 
 // TODO 1 add stuff here
 // TODO 2 tbp: add some tests using MockTokenServerTransport for the various auth problems which might occur
@@ -18,33 +20,45 @@ class YoutubeService() {
 
 
 fun main() {
-    val refreshToken = UserRepository.INSTANCE.fetchRefreshTokenByEmail("cristian.nahsuc@gmail.com")
-    val userCredentials = UserCredentials.newBuilder()
-        .setClientId(config.googleCredentials.clientId)
-        .setClientSecret(config.googleCredentials.clientSecret)
-        .setRefreshToken(refreshToken)
-        .build()
-    val httpRequestInitializer = HttpCredentialsAdapter(userCredentials)
+//    val email = "cristian.nahsuc@gmail.com"
+    val email = "cristian@tbp.land"
 
-    val y = YouTube.Builder(
-        GoogleNetHttpTransport.newTrustedTransport(),
-        GsonFactory.getDefaultInstance(),
-        httpRequestInitializer
-    )
-        .setApplicationName(APPLICATION_NAME)
-        .build()
+    val subscriptions = SubscriptionsFetcher(
+        email,
+        config.googleCredentials.clientId,
+        config.googleCredentials.clientSecret,
+        Components.userRepository
+    ).fetchAll().also { println(it) }
 
-//    println(userCredentials)
-//    println(userCredentials.refreshAccessToken())
+    val googleUserId = userRepository.fetchByEmail(email).single().googleUserId!!
 
-    val request = y.subscriptions()
-        .list(listOf("snippet", "contentDetails"))
-        .setMine(true)
-        .setFields("*")
-        .setPrettyPrint(true)
-        .execute()
 
-    println(request.toPrettyString())
+
+    dslContext.transaction { ctx ->
+        ctx.dsl().deleteFrom(YOUTUBE_CHANNEL).execute()
+
+        val ids = subscriptions.map {
+            ctx.dsl().newRecord(YOUTUBE_CHANNEL, it).apply { store() }.youtubeChannelId!!
+        }
+
+        val userId = userRepository.fetchByEmail(email).single().userId!!
+        ids.forEach { channelId ->
+            ctx.dsl().newRecord(SUBSCRIPTION, Subscription(userId, channelId)).store()
+        }
+
+
+        println("inside trx")
+        val findAll2: MutableList<YoutubeChannel> = YoutubeChannelDao(ctx).findAll()
+        println(findAll2)
+    }
+
+     // TODO tbp: need to make tests:
+    //          new subscription added
+    //          subscription deleted
+    //          subscription unchanged
+    //          can be 1 test, can be multiple?
+    //          obviously, need to implement that, but it's faster to do it via test than via clicking in youtube.
+    //              plus... i _do_ need my tests
 
 
     val snippetChannelId = "UC5cw1VFE1rsZbN9Q2cA40aw" // it appears this one is mine

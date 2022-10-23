@@ -1,0 +1,1 @@
+https://github.com/youtube/api-samples/blob/07263305b59a7c3275bc7e925f9ce6cabf774022/java/src/main/java/com/google/api/services/samples/youtube/cmdline/data/MyUploads.java

@@ -7,21 +7,18 @@ import land.tbp.jooq.tables.references.USER
 import land.tbp.land.tbp.util.dbg
 import land.tbp.land.tbp.util.logger
 import land.tbp.land.tbp.youtube.GoogleUserInfo
+import org.jooq.Configuration
 
-class UserRepository {
-    private val userDao: UserDao by lazy { // todo should be constructor param
-        UserDao(dslContext.configuration())
-    }
+class UserRepository(configuration: Configuration) : UserDao(configuration) {
 
     companion object {
         val log = logger()
-        val INSTANCE by lazy { UserRepository() }
     }
 
     private val u = USER
 
     fun fetchRefreshTokenByEmail(email: String): String =
-        dslContext
+        ctx()
             .select(OAUTH2TOKEN.REFRESHTOKEN)
             .from(OAUTH2TOKEN)
             .join(USER).using(USER.USER_ID)
@@ -30,7 +27,7 @@ class UserRepository {
             .value1()!!
 
     fun upsert(googleUserInfo: GoogleUserInfo): UserRecord {
-        val userRecord = dslContext.fetchOne(u, u.GOOGLE_USER_ID.eq(googleUserInfo.googleUserId))
+        val userRecord = ctx().fetchOne(u, u.GOOGLE_USER_ID.eq(googleUserInfo.googleUserId))
 
         return if (userRecord == null) persistUser(googleUserInfo)
         else updateUser(googleUserInfo, userRecord)
@@ -41,10 +38,10 @@ class UserRepository {
     }
 
     private fun persistUser(googleUserInfo: GoogleUserInfo): UserRecord {
-        val userRecord = dslContext.newRecord(u, googleUserInfo)
+        val userRecord = ctx().newRecord(u, googleUserInfo)
         userRecord.dbg()
         userRecord.store().dbg()
-        userDao.findAll().dbg()
+        findAll().dbg()
         return userRecord
     }
 
