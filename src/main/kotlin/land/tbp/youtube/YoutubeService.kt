@@ -5,7 +5,6 @@ import land.tbp.jooq.tables.pojos.Subscription
 import land.tbp.jooq.tables.pojos.YoutubeChannel
 import land.tbp.jooq.tables.references.SUBSCRIPTION
 import land.tbp.jooq.tables.references.YOUTUBE_CHANNEL
-import land.tbp.land.tbp.config.Components
 import land.tbp.land.tbp.config.Components.userRepository
 import land.tbp.land.tbp.config.config
 import land.tbp.land.tbp.db.dslContext
@@ -20,6 +19,11 @@ class YoutubeService() {
 
 
 fun main() {
+    work()
+}
+
+fun work() {
+
 //    val email = "cristian.nahsuc@gmail.com"
     val email = "cristian@tbp.land"
 
@@ -27,7 +31,7 @@ fun main() {
         email,
         config.googleCredentials.clientId,
         config.googleCredentials.clientSecret,
-        Components.userRepository
+        userRepository
     ).fetchAll().also { println(it) }
 
     dslContext.transaction { ctx ->
