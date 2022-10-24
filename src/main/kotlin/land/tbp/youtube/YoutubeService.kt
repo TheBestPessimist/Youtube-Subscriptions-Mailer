@@ -30,10 +30,6 @@ fun main() {
         Components.userRepository
     ).fetchAll().also { println(it) }
 
-    val googleUserId = userRepository.fetchByEmail(email).single().googleUserId!!
-
-
-
     dslContext.transaction { ctx ->
         ctx.dsl().deleteFrom(YOUTUBE_CHANNEL).execute()
 
@@ -41,18 +37,17 @@ fun main() {
             ctx.dsl().newRecord(YOUTUBE_CHANNEL, it).apply { store() }.youtubeChannelId!!
         }
 
+        // todo how to make many 2 many insertion easier? can jooq do the insert in the join table for me?
         val userId = userRepository.fetchByEmail(email).single().userId!!
         ids.forEach { channelId ->
             ctx.dsl().newRecord(SUBSCRIPTION, Subscription(userId, channelId)).store()
         }
 
-
-        println("inside trx")
         val findAll2: MutableList<YoutubeChannel> = YoutubeChannelDao(ctx).findAll()
         println(findAll2)
     }
 
-     // TODO tbp: need to make tests:
+    // TODO tbp: need to make tests:
     //          new subscription added
     //          subscription deleted
     //          subscription unchanged
