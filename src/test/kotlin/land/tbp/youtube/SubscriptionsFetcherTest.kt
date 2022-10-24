@@ -213,7 +213,7 @@ class SubscriptionsFetcherTest {
 
          /*
          todo pls help @google
-         1. why can't i return the same ock response multiple times? the second iteration throws java.lang.IllegalArgumentException: no JSON input found
+         1. why can't i return the same mock response multiple times? the second iteration throws java.lang.IllegalArgumentException: no JSON input found
          2. how can i mock multiple responses? ie, if i were to consume nextPage, nextPage, multiple times
           */
         val responseWhichThrowsIAE: SubscriptionListResponse = request.setPageToken("CAUQAA").execute()
