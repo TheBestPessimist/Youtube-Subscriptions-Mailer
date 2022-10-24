@@ -8,15 +8,22 @@ val config: Config by lazy {
         .addFileExtensionMapping("env", PropsParser())
         .build()
         .loadConfigOrThrow(
-            """.env.properties"""
+            "/application.properties",
+            ".env.properties",
         )
 }
 
 data class Config(
     val googleCredentials: GoogleCredentials,
+    val database: Database,
 )
 
 data class GoogleCredentials(
     val clientId: String,
     val clientSecret: String,
+)
+
+data class Database(
+    val jdbcUrl: String,
+    val driverClassName: String,
 )
