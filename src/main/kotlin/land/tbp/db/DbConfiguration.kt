@@ -2,6 +2,7 @@ package land.tbp.land.tbp.db
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
+import land.tbp.land.tbp.config.config
 import org.flywaydb.core.Flyway
 import org.flywaydb.core.api.output.MigrateResult
 import org.jooq.DSLContext
@@ -22,8 +23,8 @@ private val SQLITE_PRAGMAS = listOf(
 
 val hikariDataSource by lazy {
     HikariDataSource(HikariConfig().apply {
-        driverClassName = "org.sqlite.JDBC"
-        jdbcUrl = "jdbc:sqlite:zzzz.sqlite"
+        driverClassName = config.database.driverClassName
+        jdbcUrl = config.database.jdbcUrl
         connectionTestQuery = "SELECT 1"
         maxLifetime = 60.seconds.inWholeMilliseconds
         idleTimeout = 45.seconds.inWholeMilliseconds
