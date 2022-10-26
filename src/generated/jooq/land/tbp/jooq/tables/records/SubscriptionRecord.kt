@@ -4,6 +4,8 @@
 package land.tbp.jooq.tables.records
 
 
+import javax.annotation.Nonnull
+
 import land.tbp.jooq.tables.Subscription
 
 import org.jooq.Field
@@ -20,10 +22,12 @@ open class SubscriptionRecord() : UpdatableRecordImpl<SubscriptionRecord>(Subscr
 
     open var userId: Long?
         set(value): Unit = set(0, value)
+    @Nonnull
         get(): Long? = get(0) as Long?
 
     open var youtubeChannelId: Long?
         set(value): Unit = set(1, value)
+    @Nonnull
         get(): Long? = get(1) as Long?
 
     // -------------------------------------------------------------------------

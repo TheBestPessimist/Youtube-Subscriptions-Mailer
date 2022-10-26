@@ -4,6 +4,8 @@
 package land.tbp.jooq.tables.records
 
 
+import javax.annotation.Nonnull
+
 import land.tbp.jooq.tables.TestJooqIntegerForceTypes
 
 import org.jooq.Field
@@ -20,18 +22,22 @@ open class TestJooqIntegerForceTypesRecord() : TableRecordImpl<TestJooqIntegerFo
 
     open var columnTypeInteger: Long?
         set(value): Unit = set(0, value)
+    @Nonnull
         get(): Long? = get(0) as Long?
 
     open var columnTypeInt: Long?
         set(value): Unit = set(1, value)
+    @Nonnull
         get(): Long? = get(1) as Long?
 
     open var columnTypeIntCapsRage: Long?
         set(value): Unit = set(2, value)
+    @Nonnull
         get(): Long? = get(2) as Long?
 
     open var columnTypeIntegerCapsRage: Long?
         set(value): Unit = set(3, value)
+    @Nonnull
         get(): Long? = get(3) as Long?
 
     // -------------------------------------------------------------------------

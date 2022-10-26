@@ -4,6 +4,7 @@
 package land.tbp.jooq.tables.records
 
 
+import javax.annotation.Nonnull
 import javax.annotation.Nullable
 
 import land.tbp.jooq.tables.FlywaySchemaHistory
@@ -23,6 +24,7 @@ open class FlywaySchemaHistoryRecord() : UpdatableRecordImpl<FlywaySchemaHistory
 
     open var installedRank: Long?
         set(value): Unit = set(0, value)
+    @Nonnull
         get(): Long? = get(0) as Long?
 
     open var version: String?
@@ -32,14 +34,17 @@ open class FlywaySchemaHistoryRecord() : UpdatableRecordImpl<FlywaySchemaHistory
 
     open var description: String?
         set(value): Unit = set(2, value)
+    @Nonnull
         get(): String? = get(2) as String?
 
     open var type: String?
         set(value): Unit = set(3, value)
+    @Nonnull
         get(): String? = get(3) as String?
 
     open var script: String?
         set(value): Unit = set(4, value)
+    @Nonnull
         get(): String? = get(4) as String?
 
     open var checksum: Long?
@@ -49,18 +54,22 @@ open class FlywaySchemaHistoryRecord() : UpdatableRecordImpl<FlywaySchemaHistory
 
     open var installedBy: String?
         set(value): Unit = set(6, value)
+    @Nonnull
         get(): String? = get(6) as String?
 
     open var installedOn: String?
         set(value): Unit = set(7, value)
+    @Nonnull
         get(): String? = get(7) as String?
 
     open var executionTime: Long?
         set(value): Unit = set(8, value)
+    @Nonnull
         get(): Long? = get(8) as Long?
 
     open var success: Boolean?
         set(value): Unit = set(9, value)
+    @Nonnull
         get(): Boolean? = get(9) as Boolean?
 
     // -------------------------------------------------------------------------

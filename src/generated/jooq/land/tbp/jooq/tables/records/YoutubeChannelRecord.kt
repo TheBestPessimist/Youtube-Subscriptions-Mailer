@@ -4,6 +4,8 @@
 package land.tbp.jooq.tables.records
 
 
+import javax.annotation.Nonnull
+
 import land.tbp.jooq.tables.YoutubeChannel
 
 import org.jooq.Field
@@ -21,14 +23,17 @@ open class YoutubeChannelRecord() : UpdatableRecordImpl<YoutubeChannelRecord>(Yo
 
     open var youtubeChannelId: Long?
         set(value): Unit = set(0, value)
+    @Nonnull
         get(): Long? = get(0) as Long?
 
     open var channelId: String?
         set(value): Unit = set(1, value)
+    @Nonnull
         get(): String? = get(1) as String?
 
     open var title: String?
         set(value): Unit = set(2, value)
+    @Nonnull
         get(): String? = get(2) as String?
 
     // -------------------------------------------------------------------------

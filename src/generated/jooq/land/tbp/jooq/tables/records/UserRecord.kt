@@ -4,6 +4,8 @@
 package land.tbp.jooq.tables.records
 
 
+import javax.annotation.Nonnull
+
 import land.tbp.jooq.tables.User
 
 import org.jooq.Field
@@ -21,18 +23,22 @@ open class UserRecord() : UpdatableRecordImpl<UserRecord>(User.USER), Record4<Lo
 
     open var userId: Long?
         set(value): Unit = set(0, value)
+    @Nonnull
         get(): Long? = get(0) as Long?
 
     open var email: String?
         set(value): Unit = set(1, value)
+    @Nonnull
         get(): String? = get(1) as String?
 
     open var name: String?
         set(value): Unit = set(2, value)
+    @Nonnull
         get(): String? = get(2) as String?
 
     open var googleUserId: String?
         set(value): Unit = set(3, value)
+    @Nonnull
         get(): String? = get(3) as String?
 
     // -------------------------------------------------------------------------
