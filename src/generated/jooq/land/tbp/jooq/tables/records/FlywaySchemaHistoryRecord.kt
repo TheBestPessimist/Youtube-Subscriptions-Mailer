@@ -4,6 +4,8 @@
 package land.tbp.jooq.tables.records
 
 
+import javax.annotation.Nullable
+
 import land.tbp.jooq.tables.FlywaySchemaHistory
 
 import org.jooq.Field
@@ -25,6 +27,7 @@ open class FlywaySchemaHistoryRecord() : UpdatableRecordImpl<FlywaySchemaHistory
 
     open var version: String?
         set(value): Unit = set(1, value)
+    @Nullable
         get(): String? = get(1) as String?
 
     open var description: String?
@@ -41,6 +44,7 @@ open class FlywaySchemaHistoryRecord() : UpdatableRecordImpl<FlywaySchemaHistory
 
     open var checksum: Long?
         set(value): Unit = set(5, value)
+    @Nullable
         get(): Long? = get(5) as Long?
 
     open var installedBy: String?

@@ -4,6 +4,8 @@
 package land.tbp.jooq.tables.records
 
 
+import javax.annotation.Nullable
+
 import land.tbp.jooq.tables.SqliteSequence
 
 import org.jooq.Field
@@ -20,10 +22,12 @@ open class SqliteSequenceRecord() : TableRecordImpl<SqliteSequenceRecord>(Sqlite
 
     open var name: Any?
         set(value): Unit = set(0, value)
+    @Nullable
         get(): Any? = get(0) as Any?
 
     open var seq: Any?
         set(value): Unit = set(1, value)
+    @Nullable
         get(): Any? = get(1) as Any?
 
     // -------------------------------------------------------------------------

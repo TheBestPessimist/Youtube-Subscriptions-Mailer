@@ -4,6 +4,8 @@
 package land.tbp.jooq.tables.records
 
 
+import javax.annotation.Nullable
+
 import land.tbp.jooq.tables.Oauth2token
 
 import org.jooq.Field
@@ -25,14 +27,17 @@ open class Oauth2tokenRecord() : UpdatableRecordImpl<Oauth2tokenRecord>(Oauth2to
 
     open var accesstoken: String?
         set(value): Unit = set(1, value)
+    @Nullable
         get(): String? = get(1) as String?
 
     open var tokentype: String?
         set(value): Unit = set(2, value)
+    @Nullable
         get(): String? = get(2) as String?
 
     open var expiresinseconds: Long?
         set(value): Unit = set(3, value)
+    @Nullable
         get(): Long? = get(3) as Long?
 
     open var refreshtoken: String?
@@ -41,6 +46,7 @@ open class Oauth2tokenRecord() : UpdatableRecordImpl<Oauth2tokenRecord>(Oauth2to
 
     open var scope: String?
         set(value): Unit = set(5, value)
+    @Nullable
         get(): String? = get(5) as String?
 
     open var userId: Long?
