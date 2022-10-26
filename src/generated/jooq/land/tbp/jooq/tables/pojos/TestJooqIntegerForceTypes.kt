@@ -12,12 +12,11 @@ import java.io.Serializable
  */
 @Suppress("UNCHECKED_CAST")
 data class TestJooqIntegerForceTypes(
-    var columnTypeInteger: Long? = null,
-    var columnTypeInt: Long? = null,
-    var columnTypeIntCapsRage: Long? = null,
-    var columnTypeIntegerCapsRage: Long? = null
+    val columnTypeInteger: Long? = null,
+    val columnTypeInt: Long? = null,
+    val columnTypeIntCapsRage: Long? = null,
+    val columnTypeIntegerCapsRage: Long? = null
 ): Serializable {
-
 
     override fun equals(other: Any?): Boolean {
         if (this === other)

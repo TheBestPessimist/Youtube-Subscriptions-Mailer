@@ -12,18 +12,17 @@ import java.io.Serializable
  */
 @Suppress("UNCHECKED_CAST")
 data class FlywaySchemaHistory(
-    var installedRank: Long? = null,
-    var version: String? = null,
-    var description: String? = null,
-    var type: String? = null,
-    var script: String? = null,
-    var checksum: Long? = null,
-    var installedBy: String? = null,
-    var installedOn: String? = null,
-    var executionTime: Long? = null,
-    var success: Boolean? = null
+    val installedRank: Long? = null,
+    val version: String? = null,
+    val description: String? = null,
+    val type: String? = null,
+    val script: String? = null,
+    val checksum: Long? = null,
+    val installedBy: String? = null,
+    val installedOn: String? = null,
+    val executionTime: Long? = null,
+    val success: Boolean? = null
 ): Serializable {
-
 
     override fun equals(other: Any?): Boolean {
         if (this === other)

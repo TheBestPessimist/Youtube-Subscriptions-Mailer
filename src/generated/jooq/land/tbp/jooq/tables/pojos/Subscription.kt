@@ -12,10 +12,9 @@ import java.io.Serializable
  */
 @Suppress("UNCHECKED_CAST")
 data class Subscription(
-    var userId: Long? = null,
-    var youtubeChannelId: Long? = null
+    val userId: Long? = null,
+    val youtubeChannelId: Long? = null
 ): Serializable {
-
 
     override fun equals(other: Any?): Boolean {
         if (this === other)

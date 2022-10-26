@@ -12,15 +12,14 @@ import java.io.Serializable
  */
 @Suppress("UNCHECKED_CAST")
 data class Oauth2token(
-    var oauth2tokenId: Long? = null,
-    var accesstoken: String? = null,
-    var tokentype: String? = null,
-    var expiresinseconds: Long? = null,
-    var refreshtoken: String? = null,
-    var scope: String? = null,
-    var userId: Long? = null
+    val oauth2tokenId: Long? = null,
+    val accesstoken: String? = null,
+    val tokentype: String? = null,
+    val expiresinseconds: Long? = null,
+    val refreshtoken: String? = null,
+    val scope: String? = null,
+    val userId: Long? = null
 ): Serializable {
-
 
     override fun equals(other: Any?): Boolean {
         if (this === other)

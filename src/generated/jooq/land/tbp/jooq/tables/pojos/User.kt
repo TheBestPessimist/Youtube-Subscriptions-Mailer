@@ -12,12 +12,11 @@ import java.io.Serializable
  */
 @Suppress("UNCHECKED_CAST")
 data class User(
-    var userId: Long? = null,
-    var email: String? = null,
-    var name: String? = null,
-    var googleUserId: String? = null
+    val userId: Long? = null,
+    val email: String? = null,
+    val name: String? = null,
+    val googleUserId: String? = null
 ): Serializable {
-
 
     override fun equals(other: Any?): Boolean {
         if (this === other)

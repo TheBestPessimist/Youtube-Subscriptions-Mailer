@@ -12,10 +12,9 @@ import java.io.Serializable
  */
 @Suppress("UNCHECKED_CAST")
 data class SqliteSequence(
-    var name: Any? = null,
-    var seq: Any? = null
+    val name: Any? = null,
+    val seq: Any? = null
 ): Serializable {
-
 
     override fun equals(other: Any?): Boolean {
         if (this === other)
