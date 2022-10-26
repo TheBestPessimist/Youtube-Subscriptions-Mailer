@@ -27,18 +27,18 @@ open class Oauth2tokenDao(configuration: Configuration?) : DAOImpl<Oauth2tokenRe
     override fun getId(o: land.tbp.jooq.tables.pojos.Oauth2token): Long? = o.oauth2tokenId
 
     /**
-     * Fetch records that have <code>OAuth2Token_ID BETWEEN lowerInclusive AND
+     * Fetch records that have <code>oauth2token_id BETWEEN lowerInclusive AND
      * upperInclusive</code>
      */
     fun fetchRangeOfOauth2tokenId(lowerInclusive: Long?, upperInclusive: Long?): List<land.tbp.jooq.tables.pojos.Oauth2token> = fetchRange(Oauth2token.OAUTH2TOKEN.OAUTH2TOKEN_ID, lowerInclusive, upperInclusive)
 
     /**
-     * Fetch records that have <code>OAuth2Token_ID IN (values)</code>
+     * Fetch records that have <code>oauth2token_id IN (values)</code>
      */
     fun fetchByOauth2tokenId(vararg values: Long): List<land.tbp.jooq.tables.pojos.Oauth2token> = fetch(Oauth2token.OAUTH2TOKEN.OAUTH2TOKEN_ID, *values.toTypedArray())
 
     /**
-     * Fetch a unique record that has <code>OAuth2Token_ID = value</code>
+     * Fetch a unique record that has <code>oauth2token_id = value</code>
      */
     fun fetchOneByOauth2tokenId(value: Long): land.tbp.jooq.tables.pojos.Oauth2token? = fetchOne(Oauth2token.OAUTH2TOKEN.OAUTH2TOKEN_ID, value)
 

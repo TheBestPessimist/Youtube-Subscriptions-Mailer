@@ -10,6 +10,7 @@ import kotlin.collections.List
 
 import land.tbp.jooq.DefaultSchema
 import land.tbp.jooq.indexes.OAUTH2TOKEN_OAUTH2TOKEN_ID_UINDEX
+import land.tbp.jooq.indexes.OAUTH2TOKEN_USER_ID_UINDEX
 import land.tbp.jooq.keys.OAUTH2TOKEN__FK_OAUTH2TOKEN_PK_USER
 import land.tbp.jooq.keys.OAUTH2TOKEN__PK_OAUTH2TOKEN
 import land.tbp.jooq.tables.records.Oauth2tokenRecord
@@ -56,7 +57,7 @@ open class Oauth2token(
     companion object {
 
         /**
-         * The reference instance of <code>OAuth2Token</code>
+         * The reference instance of <code>oauth2token</code>
          */
         val OAUTH2TOKEN: Oauth2token = Oauth2token()
     }
@@ -67,37 +68,37 @@ open class Oauth2token(
     override fun getRecordType(): Class<Oauth2tokenRecord> = Oauth2tokenRecord::class.java
 
     /**
-     * The column <code>OAuth2Token.OAuth2Token_ID</code>.
+     * The column <code>oauth2token.oauth2token_id</code>.
      */
-    val OAUTH2TOKEN_ID: TableField<Oauth2tokenRecord, Long?> = createField(DSL.name("OAuth2Token_ID"), SQLDataType.BIGINT.nullable(false), this, "")
+    val OAUTH2TOKEN_ID: TableField<Oauth2tokenRecord, Long?> = createField(DSL.name("oauth2token_id"), SQLDataType.BIGINT.nullable(false), this, "")
 
     /**
-     * The column <code>OAuth2Token.accessToken</code>.
+     * The column <code>oauth2token.accessToken</code>.
      */
     val ACCESSTOKEN: TableField<Oauth2tokenRecord, String?> = createField(DSL.name("accessToken"), SQLDataType.CLOB, this, "")
 
     /**
-     * The column <code>OAuth2Token.tokenType</code>.
+     * The column <code>oauth2token.tokenType</code>.
      */
     val TOKENTYPE: TableField<Oauth2tokenRecord, String?> = createField(DSL.name("tokenType"), SQLDataType.CLOB, this, "")
 
     /**
-     * The column <code>OAuth2Token.expiresInSeconds</code>.
+     * The column <code>oauth2token.expiresInSeconds</code>.
      */
     val EXPIRESINSECONDS: TableField<Oauth2tokenRecord, Long?> = createField(DSL.name("expiresInSeconds"), SQLDataType.BIGINT, this, "")
 
     /**
-     * The column <code>OAuth2Token.refreshToken</code>.
+     * The column <code>oauth2token.refreshToken</code>.
      */
     val REFRESHTOKEN: TableField<Oauth2tokenRecord, String?> = createField(DSL.name("refreshToken"), SQLDataType.CLOB.nullable(false), this, "")
 
     /**
-     * The column <code>OAuth2Token.scope</code>.
+     * The column <code>oauth2token.scope</code>.
      */
     val SCOPE: TableField<Oauth2tokenRecord, String?> = createField(DSL.name("scope"), SQLDataType.CLOB, this, "")
 
     /**
-     * The column <code>OAuth2Token.user_id</code>.
+     * The column <code>oauth2token.user_id</code>.
      */
     val USER_ID: TableField<Oauth2tokenRecord, Long?> = createField(DSL.name("user_id"), SQLDataType.BIGINT.nullable(false), this, "")
 
@@ -105,23 +106,23 @@ open class Oauth2token(
     private constructor(alias: Name, aliased: Table<Oauth2tokenRecord>?, parameters: Array<Field<*>?>?): this(alias, null, null, aliased, parameters)
 
     /**
-     * Create an aliased <code>OAuth2Token</code> table reference
+     * Create an aliased <code>oauth2token</code> table reference
      */
     constructor(alias: String): this(DSL.name(alias))
 
     /**
-     * Create an aliased <code>OAuth2Token</code> table reference
+     * Create an aliased <code>oauth2token</code> table reference
      */
     constructor(alias: Name): this(alias, null)
 
     /**
-     * Create a <code>OAuth2Token</code> table reference
+     * Create a <code>oauth2token</code> table reference
      */
-    constructor(): this(DSL.name("OAuth2Token"), null)
+    constructor(): this(DSL.name("oauth2token"), null)
 
     constructor(child: Table<out Record>, key: ForeignKey<out Record, Oauth2tokenRecord>): this(Internal.createPathAlias(child, key), child, key, OAUTH2TOKEN, null)
     override fun getSchema(): Schema? = if (aliased()) null else DefaultSchema.DEFAULT_SCHEMA
-    override fun getIndexes(): List<Index> = listOf(OAUTH2TOKEN_OAUTH2TOKEN_ID_UINDEX)
+    override fun getIndexes(): List<Index> = listOf(OAUTH2TOKEN_OAUTH2TOKEN_ID_UINDEX, OAUTH2TOKEN_USER_ID_UINDEX)
     override fun getPrimaryKey(): UniqueKey<Oauth2tokenRecord> = OAUTH2TOKEN__PK_OAUTH2TOKEN
     override fun getReferences(): List<ForeignKey<Oauth2tokenRecord, *>> = listOf(OAUTH2TOKEN__FK_OAUTH2TOKEN_PK_USER)
 

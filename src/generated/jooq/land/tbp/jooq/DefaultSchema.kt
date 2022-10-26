@@ -38,7 +38,7 @@ open class DefaultSchema : SchemaImpl("", DefaultCatalog.DEFAULT_CATALOG) {
     val FLYWAY_SCHEMA_HISTORY: FlywaySchemaHistory get() = FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY
 
     /**
-     * The table <code>OAuth2Token</code>.
+     * The table <code>oauth2token</code>.
      */
     val OAUTH2TOKEN: Oauth2token get() = Oauth2token.OAUTH2TOKEN
 

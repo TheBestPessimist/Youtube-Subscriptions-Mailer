@@ -20,7 +20,7 @@ import land.tbp.jooq.tables.YoutubeChannel
 val FLYWAY_SCHEMA_HISTORY: FlywaySchemaHistory = FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY
 
 /**
- * The table <code>OAuth2Token</code>.
+ * The table <code>oauth2token</code>.
  */
 val OAUTH2TOKEN: Oauth2token = Oauth2token.OAUTH2TOKEN
 
