@@ -1,14 +1,15 @@
-create table OAuth2Token
+create table oauth2token
 (
-    OAuth2Token_ID   INTEGER not null
-        constraint OAuth2Token_pk primary key,
+    oauth2token_id   INTEGER not null
+        constraint oauth2token_pk primary key,
     accessToken      text,
     tokenType        text,
     expiresInSeconds int,
     refreshToken     text    not null,
     scope            text,
     user_id          INTEGER not null
-        constraint OAuth2Token_user_user_id_fk references user
+        constraint oauth2token_user_user_id_fk references user (user_id)
 ) strict;
 
-create unique index OAuth2Token_OAuth2Token_ID_uindex on OAuth2Token (OAuth2Token_ID);
+create unique index oauth2token_oauth2token_id_uindex on oauth2token (oauth2token_id);
+create unique index oauth2token_user_id_uindex on oauth2token (user_id);

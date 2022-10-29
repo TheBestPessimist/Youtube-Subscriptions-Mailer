@@ -1,3 +1,4 @@
+import nu.studer.gradle.jooq.JooqEdition.*
 import org.jooq.meta.jaxb.ForcedType
 
 val javaVersion = JavaVersion.VERSION_18
@@ -6,6 +7,7 @@ val gradle = "7.5.1"
 val kotlin = "1.7.20"
 val coroutines = "1.6.4"
 val ktor = "2.1.2"
+
 @Suppress("PropertyName")
 val ktor_version = ktor
 val logback = "1.4.3"
@@ -31,7 +33,7 @@ plugins {
     application
     java
     kotlin("jvm") version "1.7.20"
-    id("nu.studer.jooq") version "7.1.1"
+    id("nu.studer.jooq") version "8.0"
 }
 
 repositories {
@@ -81,7 +83,10 @@ dependencies {
 
     // database
     jooqGenerator("org.xerial:sqlite-jdbc:$sqliteJdbc")
-    implementation("org.jooq:jooq-kotlin:$jooq")
+    implementation("org.jooq:jooq-kotlin") {
+        version { strictly(jooq) }
+        because("The jooq gradle plugin adds its own obsolete jooq version like a douche.")
+    }
 
     implementation("org.xerial:sqlite-jdbc:$sqliteJdbc")
     implementation("com.zaxxer:HikariCP:$hikariCp")
@@ -141,6 +146,7 @@ jooq {
         create("main") {
             // omit task dependency from compileJava to generateJooq
             generateSchemaSourceOnCompilation.set(false)
+
             jooqConfiguration.apply {
                 logging = org.jooq.meta.jaxb.Logging.WARN
                 jdbc.apply {
@@ -172,18 +178,25 @@ jooq {
                             // name is the java type that i want, according to the mapping in `org.jooq.impl.SQLDataType`
                             name = "BIGINT"
                             // includeTypes is a regex capturing all the different types from the database which should be forced into my desired type above. Afais it's case insensitive by default
-                            includeTypes="int|integer"
+                            includeTypes = "int|integer"
                         })
 
                     }
                     generate.apply {
                         isDeprecationOnUnknownTypes = true
                         isDaos = true
+                        isPojos = true
                         isJavaTimeTypes = true
                         isDeprecated = false
-//                        isRecords = true
-//                        isImmutablePojos = false
+                        isRecords = true
+                        isImmutablePojos = true
                         isFluentSetters = true
+                        isGeneratedAnnotation = false
+                        isNullableAnnotation = true
+                        isNonnullAnnotation = true
+                        isConstructorPropertiesAnnotation = true
+                        isConstructorPropertiesAnnotationOnPojos = true
+                        isConstructorPropertiesAnnotationOnRecords = true
                     }
                     target.apply {
                         packageName = "land.tbp.jooq"
@@ -196,4 +209,5 @@ jooq {
     }
 }
 
-tasks.named<nu.studer.gradle.jooq.JooqGenerate>("generateJooq") { allInputsDeclared.set(true) }
+ // TODO tbp: implement migrations with flyway, coz why not? https://github.com/etiennestuder/gradle-jooq-plugin/blob/master/example/configure_jooq_with_flyway/build.gradle
+tasks.withType<nu.studer.gradle.jooq.JooqGenerate> { allInputsDeclared.set(true) }

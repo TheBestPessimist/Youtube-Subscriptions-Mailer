@@ -176,7 +176,7 @@ gradle-app.setting
 /.env
 /.idea/GitLinkConfig.xml
 /.idea/markdown.xml
-/src/generated/jooq/land/tbp/jooq/
+#/src/generated/jooq/land/tbp/jooq/
 /*.sqlite
 /.idea/kotlinc.xml
 /zzzz.sqlite-shm
