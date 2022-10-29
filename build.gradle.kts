@@ -148,7 +148,7 @@ jooq {
             generateSchemaSourceOnCompilation.set(false)
 
             jooqConfiguration.apply {
-                logging = org.jooq.meta.jaxb.Logging.INFO
+                logging = org.jooq.meta.jaxb.Logging.WARN
                 jdbc.apply {
                     driver = "org.sqlite.JDBC"
                     url = "jdbc:sqlite:zzzz.sqlite"
